@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vector Studio - MrTimmyJ</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MrTimmyJ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Details -->
+    <main class="project-page">
+        <!-- Project Overview -->
+        <section class="project-container">
+            <section class="project-main">
+                <img src="../media/pixelvectorstudio.png" alt="Main Project Image" class="main-image">
+                <h2 class="project-title">Pixel Vector Studio</h2>
+                <h3>Feb 2025 - April 2025</h3>
+                <p class="project-description">
+                    An intuitive online platform for creating digital artwork, offering both vector-based drawing tools and pixel art capabilities.
+                </p>
+                
+                <!-- Project Link Buttons -->
+                <div class="button-container" style="align-items: center;">
+                    <a href="https://vec-art.netlify.app/" class="project-link" target="_blank">View Project</a>
+                    <a href="https://github.com/MrTimmyJ/Pixel-Vector-Studio" class="project-link" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Scroll Buttons -->
+                <div class="button-container">
+                    <a href="#project-details" class="scroll-btn" style="text-decoration: none;"">Project Details</a>
+                    <a href=" #project-images" class="scroll-btn" style="text-decoration: none;">Project Images</a>
+                </div>
+
+                <!-- Next/Previous Buttons -->
+                <div class="button-container">
+                    <a href="fractal_flight_game.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-right: auto; padding: 5px 5px;">&lt;</a>
+                    <a href="text_based_rpg_game.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-left: auto; padding: 5px 5px;">></a>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section id="project-details" class="project-details">
+                <h3>Project Overview</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An interactive, canvas-based vector editor for pixel-precise drawing. Built with vanilla JavaScript and HTML5, this app supports multiple layers, ruler guides, zoom/pan controls, and a customizable toolset. Ideal for retro-style art, tilemaps, and creative prototyping.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelVector Studio is a fully client-side vector-style editor focused on pixel precision. It offers multi-layer editing, tool-based drawing, grid customization, and user-friendly interactions like drag-to-pan and zooming.
+                </p>
+                <img src="../media/pixelvectorstudio.png" alt="Project Detail Image" class="detail-image">
+                <ul style="text-align: center;">
+                    <h3>
+                        Canvas System
+                    </h3>
+                    <li>
+                        Uses an HTML5 canvas with p5.js integration
+                    </li>
+                    <li>
+                        Supports zooming and panning with mouse or touch
+                    </li>
+                    <li>
+                        Grid cells are stored in a 2D array with state tracking
+                    </li>
+                    <li>
+                        Layers stored as individual grid states with visibility toggles
+                    </li>
+                    <h3>
+                        Tool Handling
+                    </h3>
+                    <li>
+                        Select, lines, squares, and eraser tools implemented using event listeners
+                    </li>
+                    <li>
+                        Color picker and presets update penColor in real-time
+                    </li>
+                    <li>
+                        Clipboard functionality allows copy/paste of selected areas
+                    </li>
+                    <h3>
+                        State Management
+                    </h3>
+                    <li>
+                        Layer-based drawing grid stored in layers[]
+                    </li>
+                    <li>
+                        Selection stored with start/end coordinates and offsets
+                    </li>
+                    <li>
+                        Undo/redo tracked in gridHistory[] and redoHistory[]
+                    </li>
+                    <li>
+                        Project name, path, and changes tracked for potential file operations
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Features -->
+            <section id="project-details" class="project-details">
+                <h3>Project Features</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        🖼️ Canvas grid with customizable size and cell dimensions
+                    </li>
+                    <li>
+                        ✏️ Tools: select, draw lines, draw squares, eraser
+                    </li>
+                    <li>
+                        🧭 Rulers, zoom, and panning
+                    </li>
+                    <li>
+                        🎚️ Adjustable color presets (save, load, and clear)
+                    </li>
+                    <li>
+                        🧱 Multi-layer editing support
+                    </li>
+                    <li>
+                        🧰 Grid history with undo/redo
+                    </li>
+                    <li>
+                        📌 Click+drag selection & move
+                    </li>
+                    <li>
+                        🧠 Smart clipboard system
+                    </li>
+                    <li>
+                        ✅ Interactive UI and shortcut support
+                    </li>
+                </ul>
+                <img src="../media/citybuilderbanner.png" alt="Project Detail Image" class="detail-image">
+            </section>
+
+            <!-- Project User Workflow -->
+            <section id="project-details" class="project-details">
+                <h3>Project User Workflow</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        Launch the web app (no install needed)
+                    </li>
+                    <li>
+                        Use the toolbar to select tools, pick colors, and adjust the grid
+                    </li>
+                    <li>
+                        Draw on the canvas and manage layers
+                    </li>
+                    <li>
+                        Continue editing with full undo/redo support
+                    </li>
+                </ul>
+                <img src="../media/citybuilderbanner.png" alt="Project Detail Image" class="detail-image">
+            </section>
+
+            <!-- Technologies Used -->
+            <section id="project-details" class="skills-section" style="text-align: center; margin-top: 20px;">
+                <h3 style="margin-bottom: 40px;">Technologies Used</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        🐍 JavaScript    ---    Main programming language
+                    </li>
+                    <li>
+                        🖼️ HTML5 Canvas    ---    Drawing surface and rendering logic
+                    </li>
+                    <li>
+                        🎨 CSS    ---    Interface styling and layout
+                    </li>
+                    <li>
+                        🔧 p5.js    ---    Simplified drawing and transformations
+                    </li>
+                    <li>
+                        🧠 DOM Events    ---    For user input, tool usage, UI interactivity
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Images Section -->
+            <!-- <section id="project-images" class="project-images">
+                <h3>Project Images</h3>
+                <p>Below are some additional images showcasing the project.</p>
+
+                <img src="../media/pixelvectorstudio.png" alt="Project Image 1" class="gallery-image">
+                <p>Description of this image or feature.</p>
+
+                <img src="../media/pixelvectorstudio.png" alt="Project Image 2" class="gallery-image">
+                <p>Explanation about this feature.</p>
+
+                <img src="../media/pixelvectorstudio.png" alt="Project Image 3" class="gallery-image">
+                <p>More details about the project component.</p>
+            </section> -->
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/scroll_to_top.js"></script>
+</body>
+
+</html>

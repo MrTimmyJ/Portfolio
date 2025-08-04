@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrTimmyJ - Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #333;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content" onclick="document.getElementById('main-content').focus()">Skip to main
+    content</a>
+  <!-- <canvas id="bg"></canvas> -->
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li class="logo"><a href="index.html">MrTimmyJ</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Timothy Johnson</h1>
+                <h2 class="hero-subtitle">Software Developer & Creative Technologist</h2>
+                <p class="hero-text">Building innovative solutions at the intersection of technology and user experience
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">LinkedIn</a>
+                    <a href="#contact" class="btn btn-third">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+  <!-- Hero Section -->
+  <!-- <section class="hero">
+        <div class="hero-content">
+            <h2>Timothy Johnson</h2>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Exploring the intersection of creativity and technology.</p>
+            <p>Where creativity meets code.</p>
+            <a href="projects.html" class="btn">View Projects</a>
+
+            <div class="button-container">
+                <button class="home-btn"
+                    onclick="window.open('https://www.github.com/mrtimmyj', '_blank')">Github</button>
+                <button class="home-btn"
+                    onclick="window.open('https://www.linkedin.com/in/mrtimmyj/', '_blank')">LinkedIn</button>
+            </div>
+
+        </div>
+    </section> -->
+  <main id="main-content" tabindex="-1">
+    <!-- <div class="grey-background-card"> -->
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-content">
+            <h1 class="hero-title">Timothy Johnson</h1>
+            <h2 class="hero-subtitle">Software Developer</h2>
+            <p style="color: whitesmoke;">Where creativity meets code</p>
+            <!-- <p class="hero-text">Building innovative solutions at the intersection of technology and user experience</p> -->
+            <div class="hero-cta">
+              <a href="projects.html" class="btn btn-primary">View My Work</a>
+              <!-- <a href="#contact" class="btn btn-secondary">LinkedIn</a> -->
+              <a href="#contact" class="btn btn-third">Contact Me</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- <div class="spacer"></div> -->
+
+
+      <!-- Project Carousel -->
+      <section class="home-carousel">
+        <!-- <h2 style="text-align: center">Featured Projects</h2> -->
+        <div class="carousel-container">
+          <button class="carousel-arrow left-arrow"></button>
+          <div class="carousel">
+            <div class="carousel-track"></div>
+          </div>
+          <button class="carousel-arrow right-arrow"></button>
+        </div>
+
+        <!-- <h2 style="text-align: center">Featured Websites</h2>
+      <div class="carousel-container">
+          <button class="carousel-arrow left-arrow">&larr;</button>
+          <div class="carousel">
+              <div class="carousel-track"></div>
+          </div>
+          <button class="carousel-arrow right-arrow">&rarr;</button>
+      </div>
+
+      <h2 style="text-align: center">Featured Games</h2>
+      <div class="carousel-container">
+          <button class="carousel-arrow left-arrow">&larr;</button>
+          <div class="carousel">
+              <div class="carousel-track"></div>
+          </div>
+          <button class="carousel-arrow right-arrow">&rarr;</button>
+      </div> -->
+      </section>
+    <!-- </div> -->
+  </main>
+
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <p style="font-size: large;">I'm a passionate software developer with expertise in full-stack development,
+          database design, and
+          interactive applications. My approach combines technical excellence with thoughtful user experience
+          design.</p>
+        <a href="about.html" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="about-image">
+        <!-- <img src="media/PortfolioTitle.png" alt="Timothy Johnson" class="profile-photo"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Overview -->
+  <section class="skills-section" style="color: #333;">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Technical Expertise</h2>
+      <div class="skills-grid">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" style="color: #333;">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>I'm currently open to new opportunities and collaborations.</p>
+          <div class="social-links">
+            <a href="https://github.com/mrtimmyj" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/mrtimmyj" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:your.email@example.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="media/resume.pdf" target="_blank" aria-label="Resume">
+              <i class="fas fa-solid fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
+  </footer>
+
+  <!-- working -->
+  <!-- <script>
+    let inc = 0.1;
+let scl = 15;
+let cols, rows;
+let zoff = 0;
+let particles = [];
+let flowfield;
+let techColors = [
+  [0, 255, 255],   // Cyan
+  [255, 0, 255],    // Magenta
+  [0, 255, 0],      // Green
+  [255, 255, 0]     // Yellow
+];
+let mousePos = { x: 0, y: 0 };
+let mouseActive = false;
+let mouseRadius = 150;
+let mouseForce = 0.5; // Strength of mouse influence
+
+function setup() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.id('bg');
+  canvas.position(0, 0);
+  
+  colorMode(RGB, 255);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+  flowfield = new Array(cols * rows);
+
+  // Create particles with more density
+  let gridSpacing = 10; // Reduced from 15 for more coverage
+  let index = 0;
+  for (let y = 0; y < height; y += gridSpacing) {
+    for (let x = 0; x < width; x += gridSpacing) {
+      particles[index++] = new Particle(x, y);
+      if (index >= 5000) break;
+    }
+    if (index >= 5000) break;
+  }
+
+  background(0);
+}
+
+function draw() {
+  // More subtle fade for longer trails
+  fill(0, 0, 0, 5);
+  noStroke();
+  rect(0, 0, width, height);
+
+  // Update flow field with stronger mouse influence
+  let yoff = 0;
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    for (let x = 0; x < cols; x++) {
+      let index = x + y * cols;
+      let angle = noise(xoff, yoff, zoff) * TWO_PI * 2;
+      
+      // Enhanced mouse influence
+      if (mouseActive) {
+        let gridX = x * scl + scl/2;
+        let gridY = y * scl + scl/2;
+        let distance = dist(gridX, gridY, mousePos.x, mousePos.y);
+        
+        if (distance < mouseRadius) {
+          let mouseAngle = atan2(mousePos.y - gridY, mousePos.x - gridX);
+          let influence = map(distance, 0, mouseRadius, 1, 0);
+          angle = lerp(angle, mouseAngle, influence * mouseForce);
+          
+          // Add some randomness near mouse to prevent sticking
+          if (distance < mouseRadius/2) {
+            angle += random(-0.5, 0.5);
+          }
+        }
+      }
+      
+      angle = round(angle / (PI/4)) * (PI/4);
+      let v = p5.Vector.fromAngle(angle);
+      v.setMag(0.5);
+      flowfield[index] = v;
+      xoff += inc;
+    }
+    yoff += inc;
+  }
+  zoff += 0.0005;
+
+  // Update all particles more aggressively
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].follow(flowfield);
+    particles[i].update();
+    particles[i].edges();
+    particles[i].show();
+    
+    // Additional mouse push for nearby particles
+    if (mouseActive) {
+      let d = dist(particles[i].pos.x, particles[i].pos.y, mousePos.x, mousePos.y);
+      if (d < mouseRadius) {
+        let pushForce = map(d, 0, mouseRadius, 0.5, 0);
+        let pushAngle = atan2(particles[i].pos.y - mousePos.y, particles[i].pos.x - mousePos.x);
+        let push = p5.Vector.fromAngle(pushAngle);
+        push.mult(pushForce);
+        particles[i].applyForce(push);
+      }
+    }
+  }
+}
+
+function mouseMoved() {
+  mousePos.x = mouseX;
+  mousePos.y = mouseY;
+  mouseActive = true;
+}
+
+function mouseOut() {
+  mouseActive = false;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  setup();
+}
+
+class Particle {
+  constructor(x, y) {
+    this.pos = createVector(x || random(width), y || random(height));
+    this.vel = createVector(random(-1, 1), random(-1, 1)); // Initial random velocity
+    this.acc = createVector(0, 0);
+    this.maxspeed = 2; // Slightly faster
+    this.color = techColors[floor(random(techColors.length))];
+    this.prevPos = this.pos.copy();
+    this.life = random(150, 300); // Longer life
+    this.age = floor(random(this.life)); // Random starting age
+    this.size = random(0.5, 2); // Variable size
+  }
+
+  update() {
+    // Apply small random forces to prevent sticking
+    if (random() < 0.05) {
+      this.applyForce(createVector(random(-0.1, 0.1), random(-0.1, 0.1)));
+    }
+    
+    this.vel.add(this.acc);
+    this.vel.limit(this.maxspeed);
+    this.pos.add(this.vel);
+    this.acc.mult(0);
+    this.age++;
+    
+    if (this.age > this.life) {
+      this.reset();
+    }
+  }
+
+  reset() {
+    // When resetting, ensure particle gets new momentum
+    this.pos.set(random(width), random(height));
+    this.prevPos.set(this.pos);
+    this.vel = p5.Vector.random2D().mult(0.5);
+    this.acc.set(0, 0);
+    this.age = 0;
+    this.life = random(150, 300);
+  }
+
+  follow(vectors) {
+    let x = floor(this.pos.x / scl);
+    let y = floor(this.pos.y / scl);
+    if (x >= 0 && x < cols && y >= 0 && y < rows) {
+      let index = x + y * cols;
+      if (vectors[index]) {
+        let force = vectors[index].copy();
+        // Add some noise to prevent alignment artifacts
+        if (random() < 0.2) {
+          force.rotate(random(-0.2, 0.2));
+        }
+        this.applyForce(force);
+      }
+    }
+  }
+
+  applyForce(force) {
+    this.acc.add(force);
+  }
+
+  show() {
+    let alpha = map(this.age, 0, this.life, 50, 255);
+    stroke(this.color[0], this.color[1], this.color[2], alpha);
+    
+    // Always draw lines but with variable weight
+    strokeWeight(this.size);
+    line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+    
+    // Draw direction markers more frequently
+    if (random() < 0.3) {
+      fill(this.color[0], this.color[1], this.color[2], alpha);
+      noStroke();
+      ellipse(this.pos.x, this.pos.y, this.size * 2);
+    }
+    
+    this.updatePrev();
+  }
+
+  updatePrev() {
+    this.prevPos.x = this.pos.x;
+    this.prevPos.y = this.pos.y;
+  }
+
+  edges() {
+    let wrapped = false;
+    if (this.pos.x > width) {
+      this.pos.x = 0;
+      wrapped = true;
+    } else if (this.pos.x < 0) {
+      this.pos.x = width;
+      wrapped = true;
+    }
+    if (this.pos.y > height) {
+      this.pos.y = 0;
+      wrapped = true;
+    } else if (this.pos.y < 0) {
+      this.pos.y = height;
+      wrapped = true;
+    }
+    if (wrapped) {
+      this.prevPos.set(this.pos);
+    }
+  }
+}
+  </script> -->
+
+  <!-- mobile support last update -->
+  <!-- <script>
+let inc = 0.1;
+let scl = 15;
+let cols, rows;
+let zoff = 0;
+let particles = [];
+let flowfield;
+let techColors = [
+  [0, 255, 255],   // Cyan
+  [255, 0, 255],    // Magenta
+  [0, 255, 0],      // Green
+  [255, 255, 0]     // Yellow
+];
+let interactionPos = { x: 0, y: 0 };
+let interactionActive = false;
+let mouseRadius = 150;
+let mouseForce = 0.5;
+let isShaking = false;
+let shakeTimer = 0;
+
+function setup() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.id('bg');
+  canvas.position(0, 0);
+  canvas.style('display', 'block');
+  canvas.style('position', 'fixed');
+  canvas.style('top', '0');
+  canvas.style('left', '0');
+  canvas.style('z-index', '-1');
+  
+  // Prevent touch events from scrolling
+  canvas.elt.addEventListener('touchstart', function(e) { e.preventDefault(); }, { passive: false });
+  canvas.elt.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive: false });
+
+  colorMode(RGB, 255);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+  flowfield = new Array(cols * rows);
+
+  // Original particle creation in grid pattern
+  let gridSpacing = 15;
+  let index = 0;
+  for (let y = 0; y < height; y += gridSpacing) {
+    for (let x = 0; x < width; x += gridSpacing) {
+      particles[index++] = new Particle(x, y);
+      if (index >= 5000) break;
+    }
+    if (index >= 5000) break;
+  }
+
+  background(0);
+  
+  // Setup device shake detection
+  setupShakeDetection();
+}
+
+function draw() {
+  fill(0, 0, 0, 10);
+  noStroke();
+  rect(0, 0, width, height);
+
+  let yoff = 0;
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    for (let x = 0; x < cols; x++) {
+      let index = x + y * cols;
+      let angle = noise(xoff, yoff, zoff) * TWO_PI * 2;
+      
+      if (interactionActive || isShaking) {
+        let gridX = x * scl + scl/2;
+        let gridY = y * scl + scl/2;
+        let distance = dist(gridX, gridY, interactionPos.x, interactionPos.y);
+        
+        if (distance < mouseRadius || isShaking) {
+          let targetAngle = isShaking ? random(TWO_PI) : atan2(interactionPos.y - gridY, interactionPos.x - gridX);
+          let influence = isShaking ? 1 : map(distance, 0, mouseRadius, 1, 0);
+          angle = lerp(angle, targetAngle, influence * mouseForce);
+          
+          if (isShaking || distance < mouseRadius/2) {
+            angle += random(-0.5, 0.5);
+          }
+        }
+      }
+      
+      angle = round(angle / (PI/4)) * (PI/4);
+      let v = p5.Vector.fromAngle(angle);
+      v.setMag(isShaking ? random(1, 3) : 0.5);
+      flowfield[index] = v;
+      xoff += inc;
+    }
+    yoff += inc;
+  }
+  zoff += 0.0005;
+
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].follow(flowfield);
+    particles[i].update();
+    particles[i].edges();
+    particles[i].show();
+    
+    if (interactionActive || isShaking) {
+      let d = dist(particles[i].pos.x, particles[i].pos.y, interactionPos.x, interactionPos.y);
+      if (d < mouseRadius || isShaking) {
+        let pushForce = isShaking ? random(0.5, 2) : map(d, 0, mouseRadius, 0.5, 0);
+        let pushAngle = isShaking ? random(TWO_PI) : atan2(particles[i].pos.y - interactionPos.y, particles[i].pos.x - interactionPos.x);
+        let push = p5.Vector.fromAngle(pushAngle);
+        push.mult(pushForce);
+        particles[i].applyForce(push);
+      }
+    }
+  }
+  
+  if (isShaking) {
+    shakeTimer--;
+    if (shakeTimer <= 0) {
+      isShaking = false;
+    }
+  }
+}
+
+// Shake detection setup
+function setupShakeDetection() {
+  if (typeof DeviceMotionEvent !== 'undefined') {
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+      // iOS 13+ requires permission
+      DeviceMotionEvent.requestPermission()
+        .then(response => {
+          if (response === 'granted') {
+            window.addEventListener('devicemotion', handleShake);
+          }
+        })
+        .catch(console.error);
+    } else {
+      // For other devices
+      window.addEventListener('devicemotion', handleShake);
+    }
+  }
+}
+
+// Shake detection logic
+let lastShakeTime = 0;
+let lastAcceleration = { x: null, y: null, z: null };
+function handleShake(e) {
+  const acceleration = e.accelerationIncludingGravity;
+  const now = Date.now();
+  
+  if (!lastAcceleration.x) {
+    lastAcceleration = { x: acceleration.x, y: acceleration.y, z: acceleration.z };
+    return;
+  }
+  
+  const deltaX = Math.abs(acceleration.x - lastAcceleration.x);
+  const deltaY = Math.abs(acceleration.y - lastAcceleration.y);
+  const deltaZ = Math.abs(acceleration.z - lastAcceleration.z);
+  
+  if ((deltaX > 15 || deltaY > 15 || deltaZ > 15) && now - lastShakeTime > 1000) {
+    triggerShake();
+    lastShakeTime = now;
+  }
+  
+  lastAcceleration = { x: acceleration.x, y: acceleration.y, z: acceleration.z };
+}
+
+function triggerShake() {
+  isShaking = true;
+  shakeTimer = 30;
+  interactionPos.x = random(width);
+  interactionPos.y = random(height);
+}
+
+// Touch events
+function touchStarted(e) {
+  interactionPos.x = e.touches[0].clientX;
+  interactionPos.y = e.touches[0].clientY;
+  interactionActive = true;
+  return false;
+}
+
+function touchMoved(e) {
+  interactionPos.x = e.touches[0].clientX;
+  interactionPos.y = e.touches[0].clientY;
+  return false;
+}
+
+function touchEnded() {
+  interactionActive = false;
+}
+
+// Mouse events
+function mouseMoved() {
+  interactionPos.x = mouseX;
+  interactionPos.y = mouseY;
+  interactionActive = true;
+}
+
+function mouseOut() {
+  interactionActive = false;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+  flowfield = new Array(cols * rows);
+}
+
+// Particle class (identical to your original)
+class Particle {
+  constructor(x, y) {
+    this.pos = createVector(x || random(width), y || random(height));
+    this.vel = createVector(0, 0);
+    this.acc = createVector(0, 0);
+    this.maxspeed = 1.5;
+    this.color = techColors[floor(random(techColors.length))];
+    this.prevPos = this.pos.copy();
+    this.life = random(100, 200);
+    this.age = floor(random(this.life));
+  }
+
+  update() {
+    if (random() < 0.05 && this.vel.mag() < 0.1) {
+      this.applyForce(createVector(random(-0.1, 0.1), random(-0.1, 0.1)));
+    }
+    
+    this.vel.add(this.acc);
+    this.vel.limit(this.maxspeed * (isShaking ? 3 : 1));
+    this.pos.add(this.vel);
+    this.acc.mult(0);
+    this.age++;
+    
+    if (this.age > this.life) {
+      this.reset();
+    }
+  }
+
+  reset() {
+    this.pos.set(random(width), random(height));
+    this.prevPos.set(this.pos);
+    this.vel.set(0, 0);
+    this.acc.set(0, 0);
+    this.age = 0;
+    this.life = random(100, 200);
+  }
+
+  follow(vectors) {
+    let x = floor(this.pos.x / scl);
+    let y = floor(this.pos.y / scl);
+    if (x >= 0 && x < cols && y >= 0 && y < rows) {
+      let index = x + y * cols;
+      if (vectors[index]) {
+        let force = vectors[index].copy();
+        if (random() < 0.2) {
+          force.rotate(random(-0.2, 0.2));
+        }
+        this.applyForce(force);
+      }
+    }
+  }
+
+  applyForce(force) {
+    this.acc.add(force);
+  }
+
+  show() {
+    let alpha = map(this.age, 0, this.life, 50, 255);
+    stroke(this.color[0], this.color[1], this.color[2], alpha);
+    
+    if (random() > 0.1) {
+      let d = dist(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+      if (d < 5) {
+        strokeWeight(2);
+      } else {
+        strokeWeight(1);
+      }
+      
+      if (this.prevPos && p5.Vector.dist(this.pos, this.prevPos) > 10) {
+        fill(this.color[0], this.color[1], this.color[2], alpha);
+        noStroke();
+        ellipse(this.pos.x, this.pos.y, 3, 3);
+        stroke(this.color[0], this.color[1], this.color[2], alpha);
+      }
+      
+      line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+    }
+    this.updatePrev();
+  }
+
+  updatePrev() {
+    this.prevPos.x = this.pos.x;
+    this.prevPos.y = this.pos.y;
+  }
+
+  edges() {
+    let wrapped = false;
+    if (this.pos.x > width) {
+      this.pos.x = 0;
+      wrapped = true;
+    } else if (this.pos.x < 0) {
+      this.pos.x = width;
+      wrapped = true;
+    }
+    if (this.pos.y > height) {
+      this.pos.y = 0;
+      wrapped = true;
+    } else if (this.pos.y < 0) {
+      this.pos.y = height;
+      wrapped = true;
+    }
+    if (wrapped) {
+      this.prevPos.set(this.pos);
+    }
+  }
+}
+  </script> -->
+
+  <!-- New based on originaland best working choose this one! -->
+  <!-- <script>
+    let inc = 0.1;
+let scl = 15;
+let cols, rows;
+let zoff = 0;
+let particles = [];
+let flowfield;
+let techColors = [
+  [0, 255, 255],   // Cyan
+  [255, 0, 255],    // Magenta
+  [0, 255, 0],      // Green
+  [255, 255, 0]     // Yellow
+];
+let mousePos = { x: 0, y: 0 };
+let mouseActive = false;
+let mouseRadius = 150;
+let mouseForce = 0.5;
+
+function setup() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.id('bg');
+  canvas.position(0, 0);
+  
+  colorMode(RGB, 255);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+  flowfield = new Array(cols * rows);
+
+  // Original particle creation in grid pattern
+  let gridSpacing = 15;
+  let index = 0;
+  for (let y = 0; y < height; y += gridSpacing) {
+    for (let x = 0; x < width; x += gridSpacing) {
+      particles[index++] = new Particle(x, y);
+      if (index >= 5000) break;
+    }
+    if (index >= 5000) break;
+  }
+
+  background(0);
+}
+
+function draw() {
+  fill(0, 0, 0, 10);
+  noStroke();
+  rect(0, 0, width, height);
+
+  let yoff = 0;
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    for (let x = 0; x < cols; x++) {
+      let index = x + y * cols;
+      let angle = noise(xoff, yoff, zoff) * TWO_PI * 2;
+      
+      if (mouseActive) {
+        let gridX = x * scl + scl/2;
+        let gridY = y * scl + scl/2;
+        let distance = dist(gridX, gridY, mousePos.x, mousePos.y);
+        
+        if (distance < mouseRadius) {
+          let mouseAngle = atan2(mousePos.y - gridY, mousePos.x - gridX);
+          let influence = map(distance, 0, mouseRadius, 1, 0);
+          angle = lerp(angle, mouseAngle, influence * mouseForce);
+          
+          if (distance < mouseRadius/2) {
+            angle += random(-0.5, 0.5);
+          }
+        }
+      }
+      
+      angle = round(angle / (PI/4)) * (PI/4);
+      let v = p5.Vector.fromAngle(angle);
+      v.setMag(0.5);
+      flowfield[index] = v;
+      xoff += inc;
+    }
+    yoff += inc;
+  }
+  zoff += 0.0005;
+
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].follow(flowfield);
+    particles[i].update();
+    particles[i].edges();
+    particles[i].show();
+    
+    if (mouseActive) {
+      let d = dist(particles[i].pos.x, particles[i].pos.y, mousePos.x, mousePos.y);
+      if (d < mouseRadius) {
+        let pushForce = map(d, 0, mouseRadius, 0.5, 0);
+        let pushAngle = atan2(particles[i].pos.y - mousePos.y, particles[i].pos.x - mousePos.x);
+        let push = p5.Vector.fromAngle(pushAngle);
+        push.mult(pushForce);
+        particles[i].applyForce(push);
+      }
+    }
+  }
+}
+
+function mouseMoved() {
+  mousePos.x = mouseX;
+  mousePos.y = mouseY;
+  mouseActive = true;
+}
+
+function mouseOut() {
+  mouseActive = false;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  setup();
+}
+
+class Particle {
+  constructor(x, y) {
+    this.pos = createVector(x || random(width), y || random(height));
+    this.vel = createVector(0, 0); // Start with zero velocity like original
+    this.acc = createVector(0, 0);
+    this.maxspeed = 1.5;
+    this.color = techColors[floor(random(techColors.length))];
+    this.prevPos = this.pos.copy();
+    this.life = random(100, 200);
+    this.age = floor(random(this.life)); // Random starting age
+  }
+
+  update() {
+    // Small random nudge to prevent sticking (added improvement)
+    if (random() < 0.05 && this.vel.mag() < 0.1) {
+      this.applyForce(createVector(random(-0.1, 0.1), random(-0.1, 0.1)));
+    }
+    
+    this.vel.add(this.acc);
+    this.vel.limit(this.maxspeed);
+    this.pos.add(this.vel);
+    this.acc.mult(0);
+    this.age++;
+    
+    if (this.age > this.life) {
+      this.reset();
+    }
+  }
+
+  reset() {
+    this.pos.set(random(width), random(height));
+    this.prevPos.set(this.pos);
+    this.vel.set(0, 0); // Maintain original behavior
+    this.acc.set(0, 0);
+    this.age = 0;
+    this.life = random(100, 200);
+  }
+
+  follow(vectors) {
+    let x = floor(this.pos.x / scl);
+    let y = floor(this.pos.y / scl);
+    if (x >= 0 && x < cols && y >= 0 && y < rows) {
+      let index = x + y * cols;
+      if (vectors[index]) {
+        let force = vectors[index].copy();
+        // Small random rotation to prevent alignment
+        if (random() < 0.2) {
+          force.rotate(random(-0.2, 0.2));
+        }
+        this.applyForce(force);
+      }
+    }
+  }
+
+  applyForce(force) {
+    this.acc.add(force);
+  }
+
+  show() {
+    let alpha = map(this.age, 0, this.life, 50, 255);
+    stroke(this.color[0], this.color[1], this.color[2], alpha);
+    
+    if (random() > 0.1) {
+      let d = dist(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+      if (d < 5) {
+        strokeWeight(2);
+      } else {
+        strokeWeight(1);
+      }
+      
+      if (this.prevPos && p5.Vector.dist(this.pos, this.prevPos) > 10) {
+        fill(this.color[0], this.color[1], this.color[2], alpha);
+        noStroke();
+        ellipse(this.pos.x, this.pos.y, 3, 3);
+        stroke(this.color[0], this.color[1], this.color[2], alpha);
+      }
+      
+      line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+    }
+    this.updatePrev();
+  }
+
+  updatePrev() {
+    this.prevPos.x = this.pos.x;
+    this.prevPos.y = this.pos.y;
+  }
+
+  edges() {
+    let wrapped = false;
+    if (this.pos.x > width) {
+      this.pos.x = 0;
+      wrapped = true;
+    } else if (this.pos.x < 0) {
+      this.pos.x = width;
+      wrapped = true;
+    }
+    if (this.pos.y > height) {
+      this.pos.y = 0;
+      wrapped = true;
+    } else if (this.pos.y < 0) {
+      this.pos.y = height;
+      wrapped = true;
+    }
+    if (wrapped) {
+      this.prevPos.set(this.pos);
+    }
+  }
+}
+   </script> -->
+
+  <!-- Original -->
+  <!-- <script>
+    let inc = 0.1;
+    let scl = 15; // Larger scale for more geometric look
+    let cols, rows;
+    let zoff = 0;
+    let particles = [];
+    let flowfield;
+    let techColors = [
+      [0, 255, 255],   // Cyan
+      [255, 0, 255],    // Magenta
+      [0, 255, 0],      // Green
+      [255, 255, 0]     // Yellow
+    ];
+    let mousePos = { x: 0, y: 0 };
+    let mouseActive = false;
+    let mouseRadius = 150; // Area of mouse influence
+
+    function setup() {
+      let canvas = createCanvas(windowWidth, windowHeight);
+      canvas.id('bg');
+      canvas.position(0, 0);
+
+      colorMode(RGB, 255);
+      cols = floor(width / scl);
+      rows = floor(height / scl);
+      flowfield = new Array(cols * rows);
+
+      // Create particles in a grid pattern for more tech look
+      let gridSpacing = 15;
+      let index = 0;
+      for (let y = 0; y < height; y += gridSpacing) {
+        for (let x = 0; x < width; x += gridSpacing) {
+          particles[index++] = new Particle(x, y);
+          if (index >= 5000) break;
+        }
+        if (index >= 5000) break;
+      }
+
+      background(0);
+    }
+
+    function draw() {
+      // Fade effect to create tracers
+      fill(0, 0, 0, 10);
+      noStroke();
+      rect(0, 0, width, height);
+
+      let yoff = 0;
+      for (let y = 0; y < rows; y++) {
+        let xoff = 0;
+        for (let x = 0; x < cols; x++) {
+          let index = x + y * cols;
+          // More angular noise for tech look
+          let angle = noise(xoff, yoff, zoff) * TWO_PI * 2;
+
+          // Add mouse influence if active
+          if (mouseActive) {
+            let gridX = x * scl + scl / 2;
+            let gridY = y * scl + scl / 2;
+            let distance = dist(gridX, gridY, mousePos.x, mousePos.y);
+
+            if (distance < mouseRadius) {
+              // Calculate angle toward mouse
+              let mouseAngle = atan2(mousePos.y - gridY, mousePos.x - gridX);
+              // Blend between noise angle and mouse angle based on distance
+              let influence = map(distance, 0, mouseRadius, 1, 0);
+              angle = lerp(angle, mouseAngle, influence);
+            }
+          }
+
+          angle = round(angle / (PI / 4)) * (PI / 4); // Snap to 45 degree angles
+          let v = p5.Vector.fromAngle(angle);
+          v.setMag(0.5); // Slower movement
+          flowfield[index] = v;
+          xoff += inc;
+        }
+        yoff += inc;
+      }
+      zoff += 0.0005;
+
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].follow(flowfield);
+        particles[i].update();
+        particles[i].edges();
+        particles[i].show();
+      }
+    }
+
+    function mouseMoved() {
+      mousePos.x = mouseX;
+      mousePos.y = mouseY;
+      mouseActive = true;
+    }
+
+    function mouseOut() {
+      mouseActive = false;
+    }
+
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+      setup();
+    }
+
+    class Particle {
+      constructor(x, y) {
+        this.pos = createVector(x || random(width), y || random(height));
+        this.vel = createVector(0, 0);
+        this.acc = createVector(0, 0);
+        this.maxspeed = 1.5; // Slower speed
+        this.color = techColors[floor(random(techColors.length))];
+        this.prevPos = this.pos.copy();
+        this.life = random(100, 200);
+        this.age = 0;
+      }
+
+      update() {
+        this.vel.add(this.acc);
+        this.vel.limit(this.maxspeed);
+        this.pos.add(this.vel);
+        this.acc.mult(0);
+        this.age++;
+
+        // Occasionally reset particles to create blinking effect
+        if (this.age > this.life) {
+          this.reset();
+        }
+      }
+
+      reset() {
+        this.pos.set(random(width), random(height));
+        this.prevPos.set(this.pos);
+        this.vel.set(0, 0);
+        this.acc.set(0, 0);
+        this.age = 0;
+        this.life = random(100, 200);
+      }
+
+      follow(vectors) {
+        let x = floor(this.pos.x / scl);
+        let y = floor(this.pos.y / scl);
+        let index = x + y * cols;
+        if (vectors[index]) {
+          let force = vectors[index];
+          this.applyForce(force);
+        }
+      }
+
+      applyForce(force) {
+        this.acc.add(force);
+      }
+
+      show() {
+        // Draw with tech colors and varying brightness
+        let alpha = map(this.age, 0, this.life, 50, 255);
+        stroke(this.color[0], this.color[1], this.color[2], alpha);
+
+        // Draw lines with occasional gaps for circuit board look
+        if (random() > 0.1) { // 90% chance to draw
+          // Draw thicker lines at connections
+          let d = dist(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+          if (d < 5) {
+            strokeWeight(2);
+          } else {
+            strokeWeight(1);
+          }
+
+          // Draw small circles at direction changes
+          if (this.prevPos && p5.Vector.dist(this.pos, this.prevPos) > 10) {
+            fill(this.color[0], this.color[1], this.color[2], alpha);
+            noStroke();
+            ellipse(this.pos.x, this.pos.y, 3, 3);
+            stroke(this.color[0], this.color[1], this.color[2], alpha);
+          }
+
+          line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+        }
+        this.updatePrev();
+      }
+
+      updatePrev() {
+        this.prevPos.x = this.pos.x;
+        this.prevPos.y = this.pos.y;
+      }
+
+      edges() {
+        if (this.pos.x > width) {
+          this.pos.x = 0;
+          this.updatePrev();
+        }
+        if (this.pos.x < 0) {
+          this.pos.x = width;
+          this.updatePrev();
+        }
+        if (this.pos.y > height) {
+          this.pos.y = 0;
+          this.updatePrev();
+        }
+        if (this.pos.y < 0) {
+          this.pos.y = height;
+          this.updatePrev();
+        }
+      }
+    }
+  </script> -->
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/scroll_to_top.js"></script>
+</body>
+
+</html>
