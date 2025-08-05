@@ -423,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Game", title: "Hooked! AutoFisher", image: "media/hookbanner.png", link: "projects/hooked_game.html" },
         // { category: "Game", title: "Barnyard Smash Tutorial", image: "media/tutbanner.png", link: "projects/barnyard_smash_gametutorial.html" },
         { category: "Game", title: "Ludum Dare 50 Game Jam: Rocket Launch Sequence", image: "media/ldbanner.png", link: "projects/rocket_launch_sequence.html" },
-        { category: "Application", title: "Pet Salon Appointment Scheduler", image: "media/SAbanner.png", link: "projects/petsalon_database_app.html" },
+        { category: "Application", title: "Pet Salon Appointment Scheduler", image: "media/sabanner.png", link: "projects/petsalon_database_app.html" },
         { category: "Game", title: "That One Dungeon", image: "media/todbanner.png", link: "projects/that_one_dungeon_game.html" },
         { category: "Application", title: "Mobile School Scheduling App", image: "media/schooltermbanner.png", link: "projects/schoolterm_database_app.html" },
         { category: "Application", title: "DND Digital Character Sheet App", image: "media/dndmtgbanner.png", link: "projects/dndstats_app.html" },
@@ -485,4 +485,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial Render
     renderProjects();
+
 });
