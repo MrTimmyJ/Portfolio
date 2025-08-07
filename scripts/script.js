@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 title: "Pet Salon Appointment Scheduler App",
-                image: "media/SAbanner.png",
+                image: "media/sabanner.png",
                 category: "Desktop Application",
-                description: "JavaFX application for pet salon management",
-                link: "projects/petsalon_database_app.html"
+                description: "JavaFX application for pet lon management",
+                link: "projects/petlon_database_app.html"
             }
         ];
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             // Here you would typically send the form data to a server
-            alert('Thank you for your message! I will get back to you soon.');
+            alert('Thank you for your mesge! I will get back to you soon.');
             this.reset();
         });
     }
@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = [
         { title: "Cubicka", image: "media/cubbanner.png", link: "projects/cubicka_game.html" },
         { title: "Blue Torch Games Website", image: "media/btgbanner.png", link: "projects/bluetorchgames_website.html" },
-        { title: "JavaFX Pet Salon App", image: "media/SAbanner.png", link: "projects/petsalon_database_app.html" },
+        { title: "JavaFX Pet Salon App", image: "media/sabanner.png", link: "projects/petsalon_database_app.html" },
         { title: "That One Dungeon", image: "media/todbanner.png", link: "projects/that_one_dungeon_game.html" },
         { title: "MNIST Handwritten Digit Classifier", image: "media/mnist.png", link: "projects/mnist.html" },
         // { title: "Rust City Builder", image: "media/citybuilderbanner.png", link: "projects/rust_city_builder_project.html" },
@@ -487,3 +487,4 @@ document.addEventListener("DOMContentLoaded", function () {
     renderProjects();
 
 });
+
