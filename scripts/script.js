@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Website", title: "User Experience Website", image: "media/userexpbanner.png", link: "projects/ux_website.html" },
         { category: "Project", title: "MNIST Handwritten Digit Classifier", image: "media/mnist.png", link: "projects/mnist.html" },
         { category: "Project", title: "Rust City Builder", image: "media/citybuilderbanner.png", link: "projects/rust_city_builder_project.html" },
-        { category: "Project", title: "WASM Conways Game of Life", image: "media/gameoflifebanner.png", link: "projects/wasm_gameoflife_project.html" },
+        { category: "Project", title: "WASM Conway's Game of Life", image: "media/gameoflifebanner.png", link: "projects/wasm_gameoflife_project.html" },
         { category: "Project", title: "Dracula AI Model", image: "media/draculabanner.png", link: "projects/ai_dracula_project.html" },
         { category: "Game", title: "Mini Game Jam: Oil Knight", image: "media/oilknightbanner.png", link: "projects/oil_knight_game.html" },
         { category: "Game", title: "GameDev.tv Game Jam: Stronghold", image: "media/strongholdbanner.png", link: "projects/stronghold_game.html" },
@@ -440,7 +440,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Website", title: "The Evergreen State College Farm E-Commerce Website", image: "media/tescfbanner.png", link: "projects/tesc_farm_website.html" },
         { category: "Website", title: "Genuary Art Gallery", image: "media/genuarybanner.png", link: "projects/genuary_website.html" },
         { category: "Game", title: "Brackeys Game Jam: Tiled Dungeon", image: "media/tileddungeon_banner.png", link: "projects/tileddungeon_game.html" },
-        { category: "Game", title: "Gamedev.js Jam: Tiled Dungeon", image: "media/fractal_flight_banner.png", link: "projects/fractal_flight_game.html" },
+        { category: "Game", title: "Gamedev.js Jam: Fractal Flight", image: "media/fractal_flight_banner.png", link: "projects/fractal_flight_game.html" },
         { category: "Application", title: "Pixel Vector Studio", image: "media/pixelvectorstudio.png", link: "projects/pixelvectorstudio.html" }
 
         // { category: "Website", title: "Photography Website", image: "media/photobanner.png", link: "projects/photo_website.html" },
@@ -487,4 +487,5 @@ document.addEventListener("DOMContentLoaded", function () {
     renderProjects();
 
 });
+
 
