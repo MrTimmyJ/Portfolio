@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-2 Transformer Trainer - MrTimmyJ</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MrTimmyJ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Details -->
+    <main class="project-page">
+        <!-- Project Overview -->
+        <section class="project-container">
+            <section class="project-main">
+                <img src="../media/transformer_trainer_banner.png" alt="Main Project Image" class="main-image">
+                <h2 class="project-title">GPT-2 Transformer Trainer</h2>
+                <h3>May 2024</h3>
+                <p class="project-description">
+                    Custom GPT-2 transformer trainer for PDF/text datasets.
+                </p>
+                
+                <!-- Project Link Buttons -->
+                <div class="button-container" style="align-items: center;">
+                    <a href="https://huggingface.co/MrTimmyJ/Dracula/tree/main" class="project-link" target="_blank">Hugging Face Model</a>
+                    <a href="https://github.com/MrTimmyJ/GPT-2-Transformer-Trainer" class="project-link" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Scroll Buttons -->
+                <div class="button-container">
+                    <a href="#project-details" class="scroll-btn" style="text-decoration: none;"">Project Details</a>
+                    <a href="#project-images" class="scroll-btn" style="text-decoration: none;">Project Images</a>
+                </div>
+
+                <!-- Next/Previous Buttons -->
+                <div class="button-container">
+                    <a href="wasm_gameoflife_project.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-right: auto; padding: 5px 5px;">&lt;</a>
+                    <a href="oil_knight_game.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-left: auto; padding: 5px 5px;">></a>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section id="project-details" class="project-details">
+                <h3>Project Overview</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A transformer-based language model trainer built with PyTorch and GPT-2 tokenization (tiktoken). This project provides a robust framework for fine-tuning GPT-style models on arbitrary PDF or text datasets. It emphasizes reproducibility, performance monitoring, and experimentation with transformer architectures.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trainer is a command-line tool that handles dataset preparation, tokenization, model training, and inference sampling. Ideal for machine learning researchers, hobbyists, and developers looking to fine-tune GPT-2 on custom text datasets.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a demonstration, the trainer was tested on Bram Stoker’s Dracula PDF, showing its ability to ingest and fine-tune on a single, coherent text source while generating character-consistent output. This illustrates the trainer’s applicability to literary datasets and other structured text inputs.
+                </p>
+                <img src="../media/transformer_trainer_banner.png" alt="Project Detail Image" class="detail-image">
+                <ul style="text-align: center;">
+                    <h3>
+                        🧠 Model Architecture
+                    </h3>
+                    <li>
+                        GPT-2 style transformer with positional embeddings
+                    </li>
+                    <li>
+                        Trained using cross-entropy loss and AdamW optimizer
+                    </li>
+                    <li>
+                        Evaluated at configurable intervals with validation dataset
+                    </li>
+                    <hr style="width: 33%; margin: auto; border: 2px solid; margin-bottom: 20px; margin-top: 15px;">
+                    <h3>
+                        📊 Tokenization & Data Pipeline
+                    </h3>
+                    <li>
+                        Tokenization via tiktoken GPT-2 encoder
+                    </li>
+                    <li>
+                        Dataset split into context-length windows
+                    </li>
+                    <li>
+                        PyTorch DataLoader feeds batches as input tensors into training loop
+                    </li>
+                    <hr style="width: 33%; margin: auto; border: 2px solid; margin-bottom: 20px; margin-top: 15px;">
+                    <h3>
+                        🧪 Training & Evaluation
+                    </h3>
+                    <li>
+                        Runs multiple epochs over datasets
+                    </li>
+                    <li>
+                        Tracks training/validation loss
+                    </li>
+                    <li>
+                        Saves model checkpoints for reproducibility
+                    </li>
+                    <li>
+                        Optional text sample generation for qualitative evaluation
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Features -->
+            <section id="project-details" class="project-details">
+                <h3>Project Features</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        📚 Trains a GPT-2 model on single or multiple PDF/text datasets
+                    </li>
+                    <li>
+                        🔠 Uses GPT-2-compatible tokenization via tiktoken
+                    </li>
+                    <li>
+                        🔁 Custom training loop with PyTorch for flexible experimentation
+                    </li>
+                    <li>
+                        📉 Tracks training/validation loss and tokens processed
+                    </li>
+                    <li>
+                        💾 Save/load model checkpoints for reproducibility and iterative development
+                    </li>
+                </ul>
+                <img src="../media/transformer_trainer_banner.png" alt="Project Detail Image" class="detail-image">
+            </section>
+
+            <!-- Project User Workflow -->
+            <section id="project-details" class="project-details">
+                <h3>Project User Workflow</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        Insert PDF/text datasets into the data directory
+                    </li>
+                    <li>
+                        Run training with python gpt_train.py
+                    </li>
+                    <li>
+                        Monitor training loss and generate visual plots
+                    </li>
+                    <li>
+                        Generate text samples using provided prompts
+                    </li>
+                    <li>
+                        Save and load model checkpoints for further experimentation
+                    </li>
+                </ul>
+                <img src="../media/transformer_trainer_banner.png" alt="Project Detail Image" class="detail-image">
+            </section>
+
+            <!-- Technologies Used -->
+            <section id="project-details" class="skills-section" style="text-align: center; margin-top: 20px;">
+                <h3 style="margin-bottom: 40px;">Technologies Used</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        🐍 Python	Core programming language
+                    </li>
+                    <li>
+                        🔦 PyTorch	Deep learning framework
+                    </li>
+                    <li>
+                        🔡 tiktoken	GPT-2 tokenization library
+                    </li>
+                    <li>
+                        🧠 Custom GPT	Transformer model built from scratch
+                    </li>
+                    <li>
+                        🧪 AdamW	Optimizer for stable convergence
+                    </li>
+                    <li>
+                        📈 Matplotlib	Visualizing training and validation loss
+                    </li>
+                    <li>
+                        📁 File I/O	Data reading and checkpoint saving
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Images Section -->
+            <!-- <section id="project-images" class="project-images">
+                <h3>Project Images</h3>
+                <p>Below are some additional images showcasing the project.</p>
+
+                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 1" class="gallery-image">
+                <p>Description of this image or feature.</p>
+
+                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 2" class="gallery-image">
+                <p>Explanation about this feature.</p>
+
+                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 3" class="gallery-image">
+                <p>More details about the project component.</p>
+            </section> -->
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
