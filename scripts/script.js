@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 title: "Pet Salon Appointment Scheduler App",
-                image: "media/sabanner.png",
+                image: "media/SAbanner.png",
                 category: "Desktop Application",
-                description: "JavaFX application for pet lon management",
-                link: "projects/petlon_database_app.html"
+                description: "JavaFX application for pet salon management",
+                link: "projects/petsalon_database_app.html"
             }
         ];
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             // Here you would typically send the form data to a server
-            alert('Thank you for your mesge! I will get back to you soon.');
+            alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
     }
@@ -421,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Game", title: "Cubicka", image: "media/cubbanner.png", link: "projects/cubicka_game.html" },
         { category: "Game", title: "Top Down Racing", image: "media/tdrbanner.png", link: "projects/top_down_racing_game.html" },
         { category: "Game", title: "Hooked! AutoFisher", image: "media/hookbanner.png", link: "projects/hooked_game.html" },
+        { category: "Website", title: "Photography Website", image: "media/photobanner.png", link: "projects/photo_website.html" },
         // { category: "Game", title: "Barnyard Smash Tutorial", image: "media/tutbanner.png", link: "projects/barnyard_smash_gametutorial.html" },
         { category: "Game", title: "Ludum Dare 50 Game Jam: Rocket Launch Sequence", image: "media/ldbanner.png", link: "projects/rocket_launch_sequence.html" },
         { category: "Application", title: "Pet Salon Appointment Scheduler", image: "media/sabanner.png", link: "projects/petsalon_database_app.html" },
@@ -430,8 +431,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Website", title: "User Experience Website", image: "media/userexpbanner.png", link: "projects/ux_website.html" },
         { category: "Project", title: "MNIST Handwritten Digit Classifier", image: "media/mnist.png", link: "projects/mnist.html" },
         { category: "Project", title: "Rust City Builder", image: "media/citybuilderbanner.png", link: "projects/rust_city_builder_project.html" },
-        { category: "Project", title: "WASM Conway's Game of Life", image: "media/gameoflifebanner.png", link: "projects/wasm_gameoflife_project.html" },
-        { category: "Project", title: "Dracula AI Model", image: "media/draculabanner.png", link: "projects/ai_dracula_project.html" },
+        { category: "Project", title: "WASM Conways Game of Life", image: "media/gameoflifebanner.png", link: "projects/wasm_gameoflife_project.html" },
+        { category: "Project", title: "Dracula AI Model", image: "media/transformer_trainer_banner.png", link: "projects/transformer_trainer_project.html" },
         { category: "Game", title: "Mini Game Jam: Oil Knight", image: "media/oilknightbanner.png", link: "projects/oil_knight_game.html" },
         { category: "Game", title: "GameDev.tv Game Jam: Stronghold", image: "media/strongholdbanner.png", link: "projects/stronghold_game.html" },
         // { category: "Project", title: "MIDI Plugin", image: "media/midipluginbanner.png", link: "projects/midi_plugin_project.html" },
@@ -440,18 +441,13 @@ document.addEventListener("DOMContentLoaded", function () {
         { category: "Website", title: "The Evergreen State College Farm E-Commerce Website", image: "media/tescfbanner.png", link: "projects/tesc_farm_website.html" },
         { category: "Website", title: "Genuary Art Gallery", image: "media/genuarybanner.png", link: "projects/genuary_website.html" },
         { category: "Game", title: "Brackeys Game Jam: Tiled Dungeon", image: "media/tileddungeon_banner.png", link: "projects/tileddungeon_game.html" },
+        { category: "Website", title: "Portfolio Project", image: "media/portfolio_banner.png", link: "projects/portfolio.html" },
+        { category: "Application", title: "Pixel Vector Studio", image: "media/pixelvectorstudio.png", link: "projects/pixelvectorstudio.html" },
         { category: "Game", title: "Gamedev.js Jam: Fractal Flight", image: "media/fractal_flight_banner.png", link: "projects/fractal_flight_game.html" },
-        { category: "Application", title: "Pixel Vector Studio", image: "media/pixelvectorstudio.png", link: "projects/pixelvectorstudio.html" }
-
-        // { category: "Website", title: "Photography Website", image: "media/photobanner.png", link: "projects/photo_website.html" },
-        // { category: "Website", title: "Link Tree Website", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/linktree_website.html" },
-        // { category: "Website", title: "MrTimmyJ Portfolio", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "DND Stats Website", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "Think Freely Brainwash Website", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "Interactive Gernative Webpage Background", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "Coding Web Course", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "Documentation Website", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
-        // { category: "Website", title: "Dev Tools Suite", image: "https://dummyimage.com/1024x768/ffffff/000000", link: "projects/genuary_website.html" },
+        { category: "Website", title: "Dev Tools Suite", image: "media/devtools_suite_banner.png", link: "projects/dev_tools_suite.html" },
+        { category: "Project", title: "Personal Deployment Server", image: "media/personal_deployment_server_banner.png", link: "projects/personal_deployment_server.html" },
+        { category: "Project", title: "Splunk Deployment & Monitoring Platform", image: "media/splunk_banner.png", link: "projects/splunk_enterprise.html" },
+        { category: "Project", title: "Dracula AI Agent", image: "media/vampchat_banner.png", link: "projects/dracula_agent_project.html" }
     ];
 
     // Render Projects
@@ -485,7 +481,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial Render
     renderProjects();
-
 });
-
-
