@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Launch Sequence - MrTimmyJ</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MrTimmyJ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Details -->
+    <main class="project-page">
+        <!-- Project Overview -->
+        <section class="project-container">
+            <section class="project-main">
+                <img src="../media/ldbanner.png" alt="Main Project Image" class="main-image">
+                <h2 class="project-title">Rocket Launch Sequence</h2>
+                <h3>April 2022</h3>
+                <p class="project-description">
+                    Ludum Dare 50: Delay The Inevitable
+                </p>
+
+                <!-- Project Link Buttons -->
+                <div class="button-container" style="align-items: center;">
+                    <a href="https://sourcecodesorcerer.itch.io/rocket-launch-sequence" class="project-link" target="_blank">View Project</a>
+                    <a href="https://github.com/MrTimmyJ/Rocket-Launch-Sequence" class="project-link" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Scroll Buttons -->
+                <div class="button-container">
+                    <a href="#project-details" class="scroll-btn" style="text-decoration: none;"">Project Details</a>
+                    <a href=" #project-images" class="scroll-btn" style="text-decoration: none;">Project Images</a>
+                </div>
+
+                <!-- Next/Previous Buttons -->
+                <div class="button-container">
+                    <a href="photo_website.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-right: auto; padding: 5px 5px;">&lt;</a>
+                    <a href="petsalon_database_app.html" class="scroll-btn"
+                        style="text-decoration: none; width: fit-content; margin-left: auto; padding: 5px 5px;">></a>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section id="project-details" class="project-details">
+                <h3>Project Overview</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rocket Launch Sequence is a 2D top-down puzzle-platformer developed in Unity for Ludum Dare 50, where the theme was “Delay the Inevitable.”
+
+                    You play as a technician trapped in a high-stakes rocket launch scenario.
+                    A countdown is active, but the rocket isn't ready.
+                    Your job is to delay the inevitable launch by solving a series of systems puzzles scattered around the facility.
+                    Once all systems are secure, initiate the launch sequence.
+                </p>
+                <br>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The theme “Delay the Inevitable” is central to gameplay.
+                    The rocket will launch, but you can delay it by interacting with and solving crucial system puzzles.
+                    The twist: you can't stop the launch—only buy time to make it safe.
+                </p>
+                <img src="../media/ldbanner.png" alt="Project Detail Image" class="detail-image">
+                <ul style="text-align: center;">
+                    <li>
+                        The launch timer begins when the game starts.
+                    </li>
+                    <li>
+                        Each system puzzle is tied to an interactable console.
+                    </li>
+                    <li>
+                        Once a puzzle is completed, the associated system is marked "Ready".
+                    </li>
+                    <li>
+                        After all systems are green, the rocket can launch safely.
+                    </li>
+                    <li>
+                        If time expires before all systems are solved, the rocket launch does not go as planned.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Features -->
+            <section id="project-details" class="project-details">
+                <h3>Project Features</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        🎮 Top-down pixel-art movement with real-time puzzle solving
+                    </li>
+                    <li>
+                        ⏱️ Launch timer to pressure the player
+                    </li>
+                    <li>
+                        🧠 Three unique mini-games, each representing a system check
+                    </li>
+                    <li>
+                        🧍‍♂️ Interactable objects across a different environment
+                    </li>
+                    <li>
+                        🔄 Dynamic task-tracking and state transitions
+                    </li>
+                    <li>
+                        🎇 Multiple endings depending on launch readiness
+                    </li>
+                </ul>
+                <img src="../media/ldbanner.png" alt="Project Detail Image" class="detail-image">
+            </section>
+
+            <!-- Gameplay -->
+            <section id="project-details" class="project-details">
+                <h3>Gameplay</h3>
+                <p>
+                    Explore the command center and interact with key terminals to activate puzzles.
+                    Completing each mini-game delays the countdown and updates the launch system’s status.
+
+                    Solve all three to enable a safe launch. Fail to do so in time, and the rocket launches unsafely, triggering a failure state.
+                </p>
+                <p>
+                    🧪 Mini-Games
+                </p>
+                <ul style="text-align: center;">
+                    <li>
+                        🧭 Compass Puzzle
+                    </li>
+                    <li>
+                        Rotate four quarter-circle tiles to form a complete compass.
+                        Each tile rotates 90° per click.
+                    </li>
+                    <li>
+                        🚰 Pipe Connection Puzzle
+                    </li>
+                    <li>
+                        Rotate and align pipe tiles to ensure water flows from input to output.
+                        Leaks or dead ends = system failure.
+                    </li>
+                    <li>
+                        🧩 Matching Puzzle
+                    </li>
+                    <li>
+                        Match scattered components from the ground onto a workstation table.
+                        Drag and drop based on color, shape, or icon clues.
+                    </li>
+                </ul>
+                <img src="../media/ldbanner.png" alt="Project Detail Image" class="detail-image">
+                <p>
+                    Controls:
+                </p>
+                <ul style="text-align: center;">
+                    <li>
+                        ↑ / W..............Move Up
+                    </li>
+                    <li>
+                        ↓ / S..........Move Down
+                    </li>
+                    <li>
+                        ← / A...........Move Left
+                    </li>
+                    <li>
+                        → / D.........Move Right
+                    </li>
+                    <li>
+                        E.........Interact
+                    </li>
+                    <li>
+                        ESC.........Pause / Quit
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Technologies Used -->
+            <section id="project-details" class="skills-section" style="text-align: center; margin-top: 20px;">
+                <h3 style="margin-bottom: 40px;">Technologies Used</h3>
+                <ul style="text-align: center;">
+                    <li>
+                        🎮 Unity 2D
+                    </li>
+                    <li>
+                        💻 C# scripting
+                    </li>
+                    <li>
+                        🎨 Pixel-art sprites and tilesets
+                    </li>
+                    <li>
+                        🧠 Custom FSM (Finite State Machine) for game flow
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project Images Section -->
+            <section id="project-images" class="project-images">
+                <h3>Project Images</h3>
+                <p>Below are some additional images showcasing the project.</p>
+
+                <img src="../media/ldbanner.png" alt="Project Image 1" class="gallery-image">
+                <p>Description of this image or feature.</p>
+
+                <img src="../media/ldbanner.png" alt="Project Image 2" class="gallery-image">
+                <p>Explanation about this feature.</p>
+
+                <img src="../media/ldbanner.png" alt="Project Image 3" class="gallery-image">
+                <p>More details about the project component.</p>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
