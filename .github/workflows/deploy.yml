@@ -1,9 +1,7 @@
 name: Deploy Portfolio to Server
-
 on:
   push:
     branches: [ main ]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,11 +9,9 @@ jobs:
     - name: Deploy to Server
       uses: appleboy/ssh-action@v1.0.3
       with:
-        host: ${{ secrets.SSH_HOST }}
+        host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USER }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
         script: |
           cd /srv/portfolio
           git pull origin main
-          # If using PM2 for Node.js portfolio, add:
-          # pm2 restart portfolio || pm2 start server.js --name portfolio
