@@ -21,6 +21,8 @@ The site uses a dynamic project carousel, responsive layout scaling, and accessi
   
     📂 Organized Code: Modular HTML, CSS, and JavaScript.
 
+    🚀 GitHub Actions pipeline with SSH-based automated deployment and zero-downtime updates.
+
 📁 Code Structure
 
 .<br>
