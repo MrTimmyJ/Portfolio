@@ -1,101 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - MrTimmyJ</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — MrTimmyJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <a class="skip-link" href="#main-content" onclick="document.getElementById('main-content').focus()">Skip to main content</a>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li class="logo"><a href="index.html">MrTimmyJ</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- <header>
-        <h1>MrTimmyJ</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header> -->
+<body class="page-projects">
 
-    <!-- Projects Section -->
-    <section id="main-content" tabindex="-1" class="projects">
-        <h2>My Projects</h2>
-        <div class="filters">
-            <button data-filter="all" class="active">All</button>
-            <button data-filter="Project">Projects</button>
-            <button data-filter="Application">Applications</button>
-            <button data-filter="Website">Websites</button>
-            <button data-filter="Game">Games</button>
-        </div>
-        <div class="project-grid"></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="section-container">
+        <p class="page-hero__eyebrow">// portfolio</p>
+        <h1 class="page-hero__title">Projects</h1>
+        <p class="page-hero__sub">Production systems, APIs, infrastructure, and AI experiments.</p>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section" style="color: black;">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm currently open to new opportunities and collaborations.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/mrtimmyj" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/mrtimmyj" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:your.email@example.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="media/resume.pdf" target="_blank" aria-label="Resume">
-                            <i class="fas fa-solid fa-file-pdf"></i>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+    <!-- Featured / Pinned -->
+    <section class="projects-featured">
+      <div class="section-container">
+        <h2 class="projects-section-label">⬡ Pinned</h2>
+        <div class="projects-pinned">
+
+          <a href="projects/tesc_farm_website.html" class="pin-card">
+            <div class="pin-card__accent pin-card__accent--blue"></div>
+            <div class="pin-card__body">
+              <div class="pin-card__tags">
+                <span class="tag tag--go">Go</span>
+                <span class="tag tag--infra">Jenkins</span>
+                <span class="tag tag--infra">Docker</span>
+                <span class="tag tag--db">PostgreSQL</span>
+              </div>
+              <h3>E-Commerce REST API</h3>
+              <p>Go/Gin backend with automated CI/CD, Dockerized Linux deployment, and NGINX reverse proxy replacing manual order workflows.</p>
             </div>
+          </a>
+
+          <a href="projects/personal_deployment_server.html" class="pin-card">
+            <div class="pin-card__accent pin-card__accent--purple"></div>
+            <div class="pin-card__body">
+              <div class="pin-card__tags">
+                <span class="tag tag--infra">k3s</span>
+                <span class="tag tag--infra">Linux</span>
+                <span class="tag tag--infra">NGINX</span>
+                <span class="tag tag--infra">Docker</span>
+              </div>
+              <h3>Personal Deployment Server</h3>
+              <p>Self-hosted Linux server with Kubernetes (k3s), NGINX, and reproducible container deployments across multiple services.</p>
+            </div>
+          </a>
+
+          <a href="projects/splunk_enterprise.html" class="pin-card">
+            <div class="pin-card__accent pin-card__accent--teal"></div>
+            <div class="pin-card__body">
+              <div class="pin-card__tags">
+                <span class="tag tag--obs">Splunk</span>
+                <span class="tag tag--infra">Docker</span>
+                <span class="tag tag--obs">Monitoring</span>
+              </div>
+              <h3>Splunk Monitoring Platform</h3>
+              <p>Enterprise Splunk deployment with log ingestion pipelines, dashboards, and alerting for operational visibility.</p>
+            </div>
+          </a>
+
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
-    </footer>
+    <!-- All Projects Grid -->
+    <section class="projects-all">
+      <div class="section-container">
+        <h2 class="projects-section-label">⬡ All Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/scroll_to_top.js"></script>
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>Open to backend engineer, platform engineer, and SWE I/II roles.</p>
+            <div class="social-links">
+              <a href="https://github.com/mrtimmyj" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/mrtimmyj" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:johnsonjtimothy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="media/resume.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-pdf"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group"><input type="text" placeholder="Name" required></div>
+            <div class="form-group"><input type="email" placeholder="Email" required></div>
+            <div class="form-group"><textarea placeholder="Message" required></textarea></div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Timothy Johnson</p>
+  </footer>
+
+  <script>
+  const projects = [
+    {
+      title: "E-Commerce REST API",
+      image: "media/tescfbanner.png",
+      tags: ["Go", "Jenkins", "Docker", "PostgreSQL"],
+      tagTypes: ["go", "infra", "infra", "db"],
+      desc: "Go/Gin REST API with automated CI/CD pipelines and containerized Linux deployment.",
+      link: "projects/tesc_farm_website.html",
+      pinned: true
+    },
+    {
+      title: "Personal Deployment Server",
+      image: "media/personal_deployment_server_banner.png",
+      tags: ["k3s", "Linux", "NGINX", "Docker"],
+      tagTypes: ["infra","infra","infra","infra"],
+      desc: "Self-hosted Linux/Kubernetes server with reproducible container deployments.",
+      link: "projects/personal_deployment_server.html",
+      pinned: true
+    },
+    {
+      title: "Splunk Monitoring Platform",
+      image: "media/splunk_banner.png",
+      tags: ["Splunk", "Docker", "Monitoring"],
+      tagTypes: ["obs","infra","obs"],
+      desc: "Enterprise Splunk deployment with log pipelines, dashboards, and alerting.",
+      link: "projects/splunk_enterprise.html",
+      pinned: true
+    },
+    {
+      title: "Dracula AI Agent",
+      image: "media/vampchat_banner.png",
+      tags: ["PyTorch", "FastAPI", "NGINX"],
+      tagTypes: ["ml","go","infra"],
+      desc: "GPT-style transformer trained on Dracula, served via FastAPI with real-time chat UI.",
+      link: "projects/dracula_agent_project.html"
+    },
+    {
+      title: "GPT-2 Trainer",
+      image: "media/transformer_trainer_banner.png",
+      tags: ["PyTorch", "Python", "ML"],
+      tagTypes: ["ml","go","ml"],
+      desc: "Custom transformer model trained to generate text in the style of any pdf.",
+      link: "projects/transformer_trainer_project.html"
+    },
+    {
+      title: "Next Novel",
+      image: "media/next_novel_banner.png",
+      tags: ["Python", "REST API", "GitHub Actions"],
+      tagTypes: ["go","go","infra"],
+      desc: "AI-powered book recommendation service using semantic analysis and automated deployment.",
+      link: "projects/next_novel.html"
+    },
+    {
+      title: "Confract",
+      image: "media/confract_banner.png",
+      tags: ["Python", "REST API", "Linux"],
+      tagTypes: ["go","go","infra"],
+      desc: "AI documentation merger — intelligently combines and restructures technical docs.",
+      link: "projects/confract.html"
+    },
+    {
+      title: "Dev Tools Suite",
+      image: "media/devtools_suite_banner.png",
+      tags: ["JavaScript", "HTML", "CSS"],
+      tagTypes: ["go","go","go"],
+      desc: "Collection of browser-based developer utilities.",
+      link: "projects/dev_tools_suite.html"
+    },
+    {
+      title: "That One Dungeon",
+      image: "media/todbanner.png",
+      tags: ["Java", "Game", "Steam"],
+      tagTypes: ["go","ml","ml"],
+      desc: "Roguelike dungeon crawler shipped on Steam. Made in Godot.",
+      link: "projects/that_one_dungeon_game.html"
+    },
+  ];
+
+  const grid = document.getElementById('projects-grid');
+  projects.filter(p => !p.pinned).forEach(p => {
+    const card = document.createElement('a');
+    card.className = 'proj-card';
+    card.href = p.link;
+    card.innerHTML = `
+      <div class="proj-card__img">
+        <img src="${p.image}" alt="${p.title}" loading="lazy">
+      </div>
+      <div class="proj-card__body">
+        <div class="proj-card__tags">
+          ${p.tags.map((t, i) => `<span class="tag tag--${p.tagTypes[i]}">${t}</span>`).join('')}
+        </div>
+        <h3 class="proj-card__title">${p.title}</h3>
+        <p class="proj-card__desc">${p.desc}</p>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thanks for reaching out!');
+    this.reset();
+  });
+
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
 </body>
 </html>
