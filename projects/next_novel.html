@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Novel — MrTimmyJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="../styles/style.css">
+  <style> :root { --hero-glow: rgba(0,230,138,0.08); } </style>
+</head>
+<body class="page-project">
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content">
+
+    <section class="proj-hero">
+      <div class="proj-hero__inner">
+        <div>
+          <div class="proj-hero__meta">
+            <span class="proj-hero__eyebrow">Python · REST API · AI</span>
+            <span class="proj-hero__dot">·</span>
+            <span class="proj-hero__date">January 2026</span>
+          </div>
+          <h1 class="proj-hero__title">Next Novel</h1>
+          <p class="proj-hero__desc">An AI-powered book recommendation service that analyzes reading history and preferences using semantic similarity, returning ranked suggestions via a REST API. Deployed with automated GitHub Actions pipelines.</p>
+          <div class="proj-hero__tags">
+            <span class="tag tag--go">Python</span>
+            <span class="tag tag--go">REST API</span>
+            <span class="tag tag--infra">GitHub Actions</span>
+            <span class="tag tag--ml">Semantic Analysis</span>
+          </div>
+          <div class="proj-hero__actions">
+            <a href="http://143.198.51.64/next-novel/" target="_blank" class="btn-primary"><i class="fas fa-external-link-alt"></i> Live Site</a>
+            <a href="https://github.com/MrTimmyJ/Next-Novel" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="proj-hero__banner">
+          <img src="../media/next_novel_banner.png" alt="Next Novel">
+        </div>
+      </div>
+    </section>
+
+    <div class="case-study">
+      <aside class="case-toc" aria-label="Page contents">
+        <p class="case-toc__label">Contents</p>
+        <nav class="case-toc__list">
+          <a href="#overview"     class="case-toc__link active">Overview</a>
+          <a href="#architecture" class="case-toc__link">Architecture</a>
+          <a href="#features"     class="case-toc__link">Features</a>
+          <a href="#workflow"     class="case-toc__link">Workflow</a>
+          <a href="#stack"        class="case-toc__link">Tech Stack</a>
+        </nav>
+      </aside>
+
+      <div class="case-content">
+
+        <section id="overview" class="cs-section">
+          <h2 class="cs-section__title" data-num="01">Overview</h2>
+          <div class="cs-prose">
+            <p>Next Novel is a book recommendation API that goes beyond genre tags. Instead of simple category matching, it uses semantic analysis to understand the thematic content of books and find genuine similarity — matching mood, themes, and writing style rather than just shelf labels.</p>
+            <p>Users submit a list of books they've enjoyed and receive ranked recommendations with explanations. The API is stateless and designed to be embedded in any reading application or used as a standalone service.</p>
+            <p>The project also served as a proving ground for automated CI/CD with GitHub Actions — every push triggers tests and a deployment pipeline, making releases fully automated.</p>
+          </div>
+        </section>
+
+        <section id="architecture" class="cs-section">
+          <h2 class="cs-section__title" data-num="02">Architecture</h2>
+          <div class="cs-cards">
+            <div class="cs-card">
+              <div class="cs-card__icon">🔍</div>
+              <div class="cs-card__title">Semantic Engine</div>
+              <ul class="cs-card__list">
+                <li>Text embedding for book descriptions</li>
+                <li>Cosine similarity ranking</li>
+                <li>Multi-factor preference weighting</li>
+                <li>Thematic cluster detection</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <div class="cs-card__icon">🚀</div>
+              <div class="cs-card__title">REST API</div>
+              <ul class="cs-card__list">
+                <li>POST /recommend with reading history</li>
+                <li>JSON response with ranked results</li>
+                <li>Input validation and error handling</li>
+                <li>Stateless, horizontally scalable</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <div class="cs-card__icon">🔄</div>
+              <div class="cs-card__title">CI/CD</div>
+              <ul class="cs-card__list">
+                <li>GitHub Actions workflow on push</li>
+                <li>Automated test suite</li>
+                <li>Deployment pipeline on merge to main</li>
+                <li>Failure notifications</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="cs-section">
+          <h2 class="cs-section__title" data-num="03">Features</h2>
+          <div class="cs-features">
+            <div class="cs-feature"><span class="cs-feature__icon">📚</span><div class="cs-feature__body"><div class="cs-feature__title">Semantic book matching</div><div class="cs-feature__desc">Recommendations based on thematic similarity, not just genre tags — books that <em>feel</em> similar, not just books shelved together.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">⚡</span><div class="cs-feature__body"><div class="cs-feature__title">REST API interface</div><div class="cs-feature__desc">Clean JSON API — submit a reading list, receive ranked recommendations with confidence scores.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">🔄</span><div class="cs-feature__body"><div class="cs-feature__title">Automated deployment</div><div class="cs-feature__desc">GitHub Actions pipeline runs tests on every PR and deploys automatically on merge to main.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">📊</span><div class="cs-feature__body"><div class="cs-feature__title">Ranked results</div><div class="cs-feature__desc">Recommendations returned with similarity scores, making it easy to explain why each book was suggested.</div></div></div>
+          </div>
+        </section>
+
+        <section id="workflow" class="cs-section">
+          <h2 class="cs-section__title" data-num="04">Workflow</h2>
+          <div class="cs-steps">
+            <div class="cs-step"><div><div class="cs-step__title">Submit reading history</div><div class="cs-step__desc">POST request with a list of books the user has read and enjoyed.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Embed and analyze</div><div class="cs-step__desc">Each book is embedded as a semantic vector. User preferences are modeled from the input list.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Rank candidates</div><div class="cs-step__desc">Cosine similarity computed against the book catalog. Results ranked by score.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Return recommendations</div><div class="cs-step__desc">Top N results returned as JSON with titles, scores, and thematic reasoning.</div></div></div>
+          </div>
+        </section>
+
+        <section id="stack" class="cs-section">
+          <h2 class="cs-section__title" data-num="05">Tech Stack</h2>
+          <div class="cs-stack">
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐍</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Python</span><span class="cs-stack-item__role">Core language</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🚀</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">REST API</span><span class="cs-stack-item__role">Interface</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🧠</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Semantic Analysis</span><span class="cs-stack-item__role">Recommendation engine</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🔄</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">GitHub Actions</span><span class="cs-stack-item__role">CI/CD</span></div></div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <nav class="proj-nav" aria-label="Between projects">
+    <div class="proj-nav__inner">
+      <a href="that_one_dungeon_game.html" class="proj-nav__link">
+        <span class="proj-nav__dir">← Previous</span>
+        <span class="proj-nav__name">That One Dungeon</span>
+      </a>
+      <a href="../projects.html" class="proj-nav__all">All Projects</a>
+      <a href="confract.html" class="proj-nav__link proj-nav__link--next">
+        <span class="proj-nav__dir">Next →</span>
+        <span class="proj-nav__name">Confract</span>
+      </a>
+    </div>
+  </nav>
+
+  <footer class="site-footer"><p>© 2026 Timothy Johnson</p></footer>
+  <script>
+  const sections = document.querySelectorAll('.cs-section');
+  const tocLinks = document.querySelectorAll('.case-toc__link');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { tocLinks.forEach(l => l.classList.remove('active')); const a = document.querySelector(`.case-toc__link[href="#${e.target.id}"]`); if (a) a.classList.add('active'); }});
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => obs.observe(s));
+  
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
+</body>
+</html>

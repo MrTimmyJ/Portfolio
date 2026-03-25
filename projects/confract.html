@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confract — MrTimmyJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="../styles/style.css">
+  <style> :root { --hero-glow: rgba(0,200,255,0.08); } </style>
+</head>
+<body class="page-project">
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content">
+
+    <section class="proj-hero">
+      <div class="proj-hero__inner">
+        <div>
+          <div class="proj-hero__meta">
+            <span class="proj-hero__eyebrow">Python · AI · REST API</span>
+            <span class="proj-hero__dot">·</span>
+            <span class="proj-hero__date">February 2026</span>
+          </div>
+          <h1 class="proj-hero__title">Confract</h1>
+          <p class="proj-hero__desc">An AI-powered documentation merger that intelligently combines, deduplicates, and restructures technical docs from multiple sources into a single coherent output. Built for developer tooling workflows on Linux.</p>
+          <div class="proj-hero__tags">
+            <span class="tag tag--go">Python</span>
+            <span class="tag tag--go">REST API</span>
+            <span class="tag tag--infra">Linux</span>
+            <span class="tag tag--ml">AI / NLP</span>
+          </div>
+          <div class="proj-hero__actions">
+            <a href="http://143.198.51.64/confract/" target="_blank" class="btn-primary"><i class="fas fa-external-link-alt"></i> Live Site</a>
+            <a href="https://github.com/MrTimmyJ/Confract" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="proj-hero__banner">
+          <img src="../media/confract_banner.png" alt="Confract">
+        </div>
+      </div>
+    </section>
+
+    <div class="case-study">
+      <aside class="case-toc" aria-label="Page contents">
+        <p class="case-toc__label">Contents</p>
+        <nav class="case-toc__list">
+          <a href="#overview"     class="case-toc__link active">Overview</a>
+          <a href="#architecture" class="case-toc__link">Architecture</a>
+          <a href="#features"     class="case-toc__link">Features</a>
+          <a href="#workflow"     class="case-toc__link">Workflow</a>
+          <a href="#stack"        class="case-toc__link">Tech Stack</a>
+        </nav>
+      </aside>
+
+      <div class="case-content">
+
+        <section id="overview" class="cs-section">
+          <h2 class="cs-section__title" data-num="01">Overview</h2>
+          <div class="cs-prose">
+            <p>Confract solves a real problem in software teams: documentation sprawl. When multiple services, APIs, or teams each maintain their own docs, the result is contradictory, duplicated, or fragmented information that's hard to navigate.</p>
+            <p>Confract takes multiple documentation sources as input and produces a single merged, deduplicated, and restructured output. It uses NLP to understand semantic relationships between sections — so it doesn't just concatenate files, it understands which sections are about the same topic and merges them intelligently.</p>
+            <p>The tool is exposed as both a command-line interface and a REST API, making it easy to integrate into documentation pipelines or use ad hoc.</p>
+          </div>
+        </section>
+
+        <section id="architecture" class="cs-section">
+          <h2 class="cs-section__title" data-num="02">Architecture</h2>
+          <div class="cs-cards">
+            <div class="cs-card">
+              <div class="cs-card__icon">📄</div>
+              <div class="cs-card__title">Document Ingestion</div>
+              <ul class="cs-card__list">
+                <li>Markdown, plain text, and HTML support</li>
+                <li>Section-level parsing and structure extraction</li>
+                <li>Metadata preservation (headings, code blocks)</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <div class="cs-card__icon">🧠</div>
+              <div class="cs-card__title">Merge Engine</div>
+              <ul class="cs-card__list">
+                <li>Semantic similarity for section matching</li>
+                <li>Deduplication with conflict resolution</li>
+                <li>Hierarchical structure reconstruction</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <div class="cs-card__icon">🚀</div>
+              <div class="cs-card__title">API + CLI</div>
+              <ul class="cs-card__list">
+                <li>REST API for pipeline integration</li>
+                <li>CLI for local/ad hoc use</li>
+                <li>JSON output schema</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="cs-section">
+          <h2 class="cs-section__title" data-num="03">Features</h2>
+          <div class="cs-features">
+            <div class="cs-feature"><span class="cs-feature__icon">📑</span><div class="cs-feature__body"><div class="cs-feature__title">Multi-source merging</div><div class="cs-feature__desc">Accepts multiple documentation files and merges them into a single coherent output, preserving structure.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">🔁</span><div class="cs-feature__body"><div class="cs-feature__title">Intelligent deduplication</div><div class="cs-feature__desc">Semantic matching identifies sections covering the same topic across documents and merges rather than duplicates.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">🏗️</span><div class="cs-feature__body"><div class="cs-feature__title">Structure reconstruction</div><div class="cs-feature__desc">Output is reorganized into a logical hierarchy — not just appended files, but a properly structured document.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">⚡</span><div class="cs-feature__body"><div class="cs-feature__title">REST API + CLI</div><div class="cs-feature__desc">Use from the command line for local work, or integrate into a documentation pipeline via the REST API.</div></div></div>
+          </div>
+        </section>
+
+        <section id="workflow" class="cs-section">
+          <h2 class="cs-section__title" data-num="04">Workflow</h2>
+          <div class="cs-steps">
+            <div class="cs-step"><div><div class="cs-step__title">Provide source documents</div><div class="cs-step__desc">Pass multiple documentation files as input — Markdown, text, or HTML.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Parse and embed</div><div class="cs-step__desc">Each document is parsed into sections. Sections are semantically embedded for similarity comparison.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Match and merge</div><div class="cs-step__desc">Semantically similar sections are identified and merged. Unique sections are preserved as-is.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Reconstruct output</div><div class="cs-step__desc">Merged sections are reassembled into a coherent document with logical heading hierarchy.</div></div></div>
+            <div class="cs-step"><div><div class="cs-step__title">Export</div><div class="cs-step__desc">Output written as Markdown or returned as JSON via the API. Ready for use in docs pipelines.</div></div></div>
+          </div>
+        </section>
+
+        <section id="stack" class="cs-section">
+          <h2 class="cs-section__title" data-num="05">Tech Stack</h2>
+          <div class="cs-stack">
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐍</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Python</span><span class="cs-stack-item__role">Core language</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🚀</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">REST API</span><span class="cs-stack-item__role">Service interface</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🧠</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">NLP / Embeddings</span><span class="cs-stack-item__role">Semantic merge</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐧</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Linux</span><span class="cs-stack-item__role">Deployment target</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">💻</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">CLI</span><span class="cs-stack-item__role">Local interface</span></div></div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <nav class="proj-nav" aria-label="Between projects">
+    <div class="proj-nav__inner">
+      <a href="next_novel.html" class="proj-nav__link">
+        <span class="proj-nav__dir">← Previous</span>
+        <span class="proj-nav__name">Next Novel</span>
+      </a>
+      <a href="../projects.html" class="proj-nav__all">All Projects</a>
+      <a href="dev_tools_suite.html" class="proj-nav__link proj-nav__link--next">
+        <span class="proj-nav__dir">Next →</span>
+        <span class="proj-nav__name">Dev Tools Suite</span>
+      </a>
+    </div>
+  </nav>
+
+  <footer class="site-footer"><p>© 2026 Timothy Johnson</p></footer>
+  <script>
+  const sections = document.querySelectorAll('.cs-section');
+  const tocLinks = document.querySelectorAll('.case-toc__link');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { tocLinks.forEach(l => l.classList.remove('active')); const a = document.querySelector(`.case-toc__link[href="#${e.target.id}"]`); if (a) a.classList.add('active'); }});
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => obs.observe(s));
+  
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
+</body>
+</html>
