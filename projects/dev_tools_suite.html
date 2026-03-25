@@ -1,177 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Suite - MrTimmyJ</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Tools Suite — MrTimmyJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="../styles/style.css">
+  <style> :root { --hero-glow: rgba(0,200,255,0.07); } </style>
 </head>
+<body class="page-project">
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content">
 
-<body>
-    <!-- Header -->
-    <header>
-        <h1>MrTimmyJ</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
+    <section class="proj-hero">
+      <div class="proj-hero__inner">
+        <div>
+          <div class="proj-hero__meta">
+            <span class="proj-hero__eyebrow">JavaScript · HTML · CSS</span>
+            <span class="proj-hero__dot">·</span>
+            <span class="proj-hero__date">April 2025</span>
+          </div>
+          <h1 class="proj-hero__title">Dev Tools Suite</h1>
+          <p class="proj-hero__desc">A collection of browser-based developer utilities built without frameworks — JSON formatter, regex tester, base64 encoder, color converter, timestamp tools, and more. Everything runs client-side with zero dependencies.</p>
+          <div class="proj-hero__tags">
+            <span class="tag tag--go">JavaScript</span>
+            <span class="tag tag--go">HTML</span>
+            <span class="tag tag--go">CSS</span>
+          </div>
+          <div class="proj-hero__actions">
+            <a href="https://devtoolsuite.netlify.app/" target="_blank" class="btn-primary"><i class="fas fa-external-link-alt"></i> Live Site</a>
+            <a href="https://github.com/MrTimmyJ/DevTools-Suite" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="proj-hero__banner">
+          <img src="../media/devtools_suite_banner.png" alt="Dev Tools Suite">
+        </div>
+      </div>
+    </section>
+
+    <div class="case-study">
+      <aside class="case-toc" aria-label="Page contents">
+        <p class="case-toc__label">Contents</p>
+        <nav class="case-toc__list">
+          <a href="#overview"  class="case-toc__link active">Overview</a>
+          <a href="#tools"     class="case-toc__link">Tools</a>
+          <a href="#design"    class="case-toc__link">Design</a>
+          <a href="#stack"     class="case-toc__link">Tech Stack</a>
         </nav>
-    </header>
+      </aside>
 
-    <!-- Project Details -->
-    <main class="project-page">
-        <!-- Project Overview -->
-        <section class="project-container">
-            <section class="project-main">
-                <img src="../media/devtools_suite_banner.png" alt="Main Project Image" class="main-image">
-                <h2 class="project-title">DevTools Suite</h2>
-                <h3>April 2025</h3>
-                <p class="project-description">
-                    A web-based collection of productivity and development tools built for programmers and designers.
-                    The suite provides utilities for code formatting, duplicate removal, algorithm visualization, and creative design.
-                </p>
-                
-                <!-- Project Link Buttons -->
-                <div class="button-container" style="align-items: center;">
-                    <a href="https://devtoolsuite.netlify.app/" class="project-link" target="_blank">View Project</a>
-                    <a href="https://github.com/MrTimmyJ/DevTools-Suite" class="project-link" target="_blank">GitHub</a>
-                </div>
+      <div class="case-content">
 
-                <!-- Scroll Buttons -->
-                <div class="button-container">
-                    <a href="#project-details" class="scroll-btn" style="text-decoration: none;"">Project Details</a>
-                    <a href="#project-images" class="scroll-btn" style="text-decoration: none;">Project Images</a>
-                </div>
-
-                <!-- Next/Previous Buttons -->
-                <div class="button-container">
-                    <a href="fractal_flight_game.html" class="scroll-btn"
-                        style="text-decoration: none; width: fit-content; margin-right: auto; padding: 5px 5px;">&lt;</a>
-                    <a href="personal_deployment_server.html" class="scroll-btn"
-                        style="text-decoration: none; width: fit-content; margin-left: auto; padding: 5px 5px;">></a>
-                </div>
-            </section>
-
-            <!-- Project Overview -->
-            <section id="project-details" class="project-details">
-                <h3>Project Overview</h3>
-                <p>
-                    The Dev Tools Suite bundles multiple independent web tools into one clean and accessible interface.
-                </p>
-                <p>
-                    Each tool runs directly in the browser, requiring no installation or external setup.  
-                </p>
-                <p>
-                    The suite helps developers save time, visualize algorithms, and experiment with design ideas in an interactive way. 
-                </p>
-                <img src="../media/devtools_suite_banner.png" alt="Project Detail Image" class="detail-image">
-                <ul style="text-align: center;">
-                    <h3>
-                        📝 Code Utilities  
-                    </h3>
-                    <li>
-                        Code Formatter: Remove comments and clean up source files
-                    </li>
-                    <li>
-                        Duplicate Remover: Detect and remove duplicate lines
-                    </li>
-                    <li>
-                        Duplicate Code Editor: Merge/update repeated functions or lines
-                    </li>
-                    <h3>
-                        📊 Productivity Tools
-                    </h3>
-                    <li>
-                        Big O Notation Visualizer: Graph runtime complexity of algorithms
-                    </li>
-                    <li>
-                        Sorting Algorithm Visualizer: Step-by-step animation of common sorting methods
-                    </li>
-                    <li>
-                        Search Methods Explorer: Visual guide to search strategies in data structures
-                    </li>
-                    <h3>
-                        🎨 Design Tools 
-                    </h3>
-                    <li>
-                        PixelVector Studio: Create pixel-perfect vector designs
-                    </li>
-                    <li>
-                        Kaleidoscope: A mirrored drawing tool for patterns and symmetry
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Project Features -->
-            <section id="project-details" class="project-details">
-                <h3>Project Features</h3>
-                <ul style="text-align: center;">
-                    <li>
-                        Navigation: Index page links to each individual tool with description + “Open Tool” button.  
-                    </li>
-                    <li>
-                        Self-Contained Tools  
-Each app runs independently with its own HTML/CSS/JS files. 
-                    </li>
-                    <li>
-                        Visualization  
-Algorithm tools use JavaScript animations and canvas elements to show step-by-step behavior.
-                    </li>
-                    <li>
-                        Design Tools  
-Drawing/Vector editors leverage JS + HTML5 Canvas for real-time rendering.
-                    </li>
-                </ul>
-                <img src="../media/devtools_suite_banner.png" alt="Project Detail Image" class="detail-image">
-            </section>
-
-            <!-- Technologies Used -->
-            <section id="project-details" class="skills-section" style="text-align: center; margin-top: 20px;">
-                <h3 style="margin-bottom: 40px;">Technologies Used</h3>
-                <ul style="text-align: center;">
-                    <li>
-                        🌐 HTML5  
-                    </li>
-                    <li>
-                        🎨 CSS3  
-                    </li>
-                    <li>
-                        ⚙️ JavaScript (ES6) 
-                    </li>
-                    <li>
-                        🖌️ Canvas API (for visualizers & design tools) 
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Project Images Section -->
-            <!-- <section id="project-images" class="project-images">
-                <h3>Project Images</h3>
-                <p>Below are some additional images showcasing the project.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 1" class="gallery-image">
-                <p>Description of this image or feature.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 2" class="gallery-image">
-                <p>Explanation about this feature.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 3" class="gallery-image">
-                <p>More details about the project component.</p>
-            </section> -->
+        <section id="overview" class="cs-section">
+          <h2 class="cs-section__title" data-num="01">Overview</h2>
+          <div class="cs-prose">
+            <p>Dev Tools Suite is a set of browser-based utilities for everyday developer tasks. The philosophy: fast, zero-install, no account required. Open the URL, use the tool, done.</p>
+            <p>Everything runs client-side in vanilla JavaScript — no backend, no frameworks, no build step. This keeps the tools instant to load, auditable, and hostable anywhere. It also made it a good exercise in writing clean, maintainable JS without relying on library abstractions.</p>
+          </div>
         </section>
 
-    </main>
+        <section id="tools" class="cs-section">
+          <h2 class="cs-section__title" data-num="02">Tools Included</h2>
+          <div class="cs-cards">
+            <div class="cs-card"><div class="cs-card__icon">📋</div><div class="cs-card__title">JSON Formatter</div><ul class="cs-card__list"><li>Pretty-print and minify JSON</li><li>Syntax validation with error highlighting</li><li>Copy to clipboard</li></ul></div>
+            <div class="cs-card"><div class="cs-card__icon">🔍</div><div class="cs-card__title">Regex Tester</div><ul class="cs-card__list"><li>Live match highlighting</li><li>Flag toggles (g, i, m, s)</li><li>Match group extraction</li></ul></div>
+            <div class="cs-card"><div class="cs-card__icon">🔐</div><div class="cs-card__title">Base64 Encoder</div><ul class="cs-card__list"><li>Encode and decode text</li><li>URL-safe variant support</li></ul></div>
+            <div class="cs-card"><div class="cs-card__icon">🎨</div><div class="cs-card__title">Color Converter</div><ul class="cs-card__list"><li>HEX ↔ RGB ↔ HSL conversion</li><li>Color picker input</li><li>Visual preview</li></ul></div>
+            <div class="cs-card"><div class="cs-card__icon">🕐</div><div class="cs-card__title">Timestamp Tools</div><ul class="cs-card__list"><li>Unix ↔ human-readable conversion</li><li>Current timestamp</li><li>Timezone aware</li></ul></div>
+            <div class="cs-card"><div class="cs-card__icon">🔤</div><div class="cs-card__title">String Utilities</div><ul class="cs-card__list"><li>Case conversion (camel, snake, kebab)</li><li>Word / char count</li><li>URL encode/decode</li></ul></div>
+          </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
-    </footer>
+        <section id="design" class="cs-section">
+          <h2 class="cs-section__title" data-num="03">Design Decisions</h2>
+          <div class="cs-features">
+            <div class="cs-feature"><span class="cs-feature__icon">⚡</span><div class="cs-feature__body"><div class="cs-feature__title">Zero dependencies</div><div class="cs-feature__desc">No npm, no bundler, no framework. Vanilla JS and CSS only — fast load, easy to audit, works offline.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">🔒</span><div class="cs-feature__body"><div class="cs-feature__title">Client-side only</div><div class="cs-feature__desc">No data is sent to a server. Everything runs in the browser — safe to use with sensitive content.</div></div></div>
+            <div class="cs-feature"><span class="cs-feature__icon">📱</span><div class="cs-feature__body"><div class="cs-feature__title">Responsive layout</div><div class="cs-feature__desc">Tools work on mobile and desktop. Useful for quick checks on the go.</div></div></div>
+          </div>
+        </section>
 
-    <script src="../script.js"></script>
+        <section id="stack" class="cs-section">
+          <h2 class="cs-section__title" data-num="04">Tech Stack</h2>
+          <div class="cs-stack">
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🌐</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">JavaScript (ES6)</span><span class="cs-stack-item__role">Logic</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">📄</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">HTML</span><span class="cs-stack-item__role">Structure</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🎨</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">CSS</span><span class="cs-stack-item__role">Styling</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐙</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">GitHub Pages</span><span class="cs-stack-item__role">Hosting</span></div></div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <nav class="proj-nav" aria-label="Between projects">
+    <div class="proj-nav__inner">
+      <a href="confract.html" class="proj-nav__link">
+        <span class="proj-nav__dir">← Previous</span>
+        <span class="proj-nav__name">Confract</span>
+      </a>
+      <a href="../projects.html" class="proj-nav__all">All Projects</a>
+      <a href="that_one_dungeon_game.html" class="proj-nav__link proj-nav__link--next">
+        <span class="proj-nav__dir">Next →</span>
+        <span class="proj-nav__name">That One Dungeon</span>
+      </a>
+    </div>
+  </nav>
+
+  <footer class="site-footer"><p>© 2026 Timothy Johnson</p></footer>
+  <script>
+  const sections = document.querySelectorAll('.cs-section');
+  const tocLinks = document.querySelectorAll('.case-toc__link');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { tocLinks.forEach(l => l.classList.remove('active')); const a = document.querySelector(`.case-toc__link[href="#${e.target.id}"]`); if (a) a.classList.add('active'); }});
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => obs.observe(s));
+  
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
 </body>
-
 </html>
