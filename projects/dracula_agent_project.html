@@ -1,261 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dracula AI Agent - MrTimmyJ</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dracula AI Agent — MrTimmyJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    :root { --hero-glow: rgba(180,0,0,0.10); }
+  </style>
 </head>
+<body class="page-project">
 
-<body>
-    <!-- Header -->
-    <header>
-        <h1>MrTimmyJ</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="proj-hero">
+      <div class="proj-hero__inner">
+        <div>
+          <div class="proj-hero__meta">
+            <span class="proj-hero__eyebrow">ML · Backend · Deployment</span>
+            <span class="proj-hero__dot">·</span>
+            <span class="proj-hero__date">August 2025</span>
+          </div>
+          <h1 class="proj-hero__title">Dracula AI Agent</h1>
+          <p class="proj-hero__desc">An interactive chatbot trained on Bram Stoker's <em>Dracula</em>. Built with a custom GPT-style transformer in PyTorch, deployed via FastAPI + NGINX on Ubuntu, with a real-time chat UI ("VampChat").</p>
+          <div class="proj-hero__tags">
+            <span class="tag tag--ml">PyTorch</span>
+            <span class="tag tag--ml">Transformers</span>
+            <span class="tag tag--go">FastAPI</span>
+            <span class="tag tag--infra">NGINX</span>
+            <span class="tag tag--infra">Ubuntu</span>
+            <span class="tag tag--go">Python</span>
+          </div>
+          <div class="proj-hero__actions">
+            <a href="http://143.198.51.64/dracula-ai/" target="_blank" class="btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/MrTimmyJ/Dracula-AI-Agent" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="proj-hero__banner">
+          <img src="../media/vampchat_banner.png" alt="VampChat — Dracula AI Agent interface">
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study -->
+    <div class="case-study">
+
+      <!-- Sidebar TOC -->
+      <aside class="case-toc" aria-label="Page contents">
+        <p class="case-toc__label">Contents</p>
+        <nav class="case-toc__list">
+          <a href="#overview"      class="case-toc__link active">Overview</a>
+          <a href="#architecture"  class="case-toc__link">Architecture</a>
+          <a href="#features"      class="case-toc__link">Features</a>
+          <a href="#workflow"      class="case-toc__link">Workflow</a>
+          <a href="#stack"         class="case-toc__link">Tech Stack</a>
         </nav>
-    </header>
+      </aside>
 
-    <!-- Project Details -->
-    <main class="project-page">
-        <!-- Project Overview -->
-        <section class="project-container">
-            <section class="project-main">
-                <img src="../media/vampchat_banner.png" alt="Main Project Image" class="main-image">
-                <h2 class="project-title">Dracula AI Agent</h2>
-                <h3>August 2025</h3>
-                <p class="project-description">
-                    An interactive chatbot trained on Bram Stoker’s Dracula. Built with a custom GPT-style model in PyTorch, deployed via FastAPI + Nginx, and featuring a real-time chat UI.
-                </p>
-                
-                <!-- Project Link Buttons -->
-                <div class="button-container" style="align-items: center;">
-                    <a href="http://143.198.51.64/dracula-ai/" class="project-link" target="_blank">Live Demo</a>
-                    <a href="https://github.com/MrTimmyJ/Dracula-AI-Agent" class="project-link" target="_blank">GitHub</a>
-                </div>
+      <!-- Content -->
+      <div class="case-content">
 
-                <!-- Scroll Buttons -->
-                <div class="button-container">
-                    <a href="#project-details" class="scroll-btn" style="text-decoration: none;"">Project Details</a>
-                    <a href="#project-images" class="scroll-btn" style="text-decoration: none;">Project Images</a>
-                </div>
-
-                <!-- Next/Previous Buttons -->
-                <div class="button-container">
-                    <a href="splunk_enterprise.html" class="scroll-btn"
-                        style="text-decoration: none; width: fit-content; margin-right: auto; padding: 5px 5px;">&lt;</a>
-                    <a href="text_based_rpg_game.html" class="scroll-btn"
-                        style="text-decoration: none; width: fit-content; margin-left: auto; padding: 5px 5px;">></a>
-                </div>
-            </section>
-
-            <!-- Project Overview -->
-            <section id="project-details" class="project-details">
-                <h3>Project Overview</h3>
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dracula AI Agent is an interactive, full-stack AI chatbot trained on Bram Stoker’s Dracula.
-                    Originally built as a Hugging Face model, it has since been expanded into a production-ready FastAPI web service, hosted on an Ubuntu server with Nginx.
-                </p>
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system combines a PyTorch-based GPT-style model (trained from scratch with tiktoken tokenization) and a frontend chat UI (“VampChat”) that allows users to converse with Dracula in real time.
-                    This project demonstrates expertise in machine learning, backend deployment, and AI-driven web applications.
-                </p>
-                <img src="../media/vampchat_banner.png" alt="Project Detail Image" class="detail-image">
-                <ul style="text-align: center;">
-                    <h3>
-                        🧠 Model Architecture
-                    </h3>
-                    <li>
-                        GPT-style transformer with token and positional embeddings
-                    </li>
-                    <li>
-                        Trained with cross-entropy loss using AdamW
-                    </li>
-                    <li>
-                        Inference supports temperature/top-k sampling for varied outputs
-                    </li>
-                    <h3>
-                        📊 Tokenization & Data Pipeline
-                    </h3>
-                    <li>
-                        tiktoken (GPT-2) encoding for efficient tokenization
-                    </li>
-                    <li>
-                        Text chunked into fixed-length context windows with stride
-                    </li>
-                    <li>
-                        PyTorch DataLoader batches/shuffles train/validation splits
-                    </li>
-                    <h3>
-                        🧪 Training & Evaluation
-                    </h3>
-                    <li>
-                        Multi-epoch training with periodic validation passes
-                    </li>
-                    <li>
-                        Loss tracking and visualization for diagnostics
-                    </li>
-                    <li>
-                        Checkpoint save/load via torch.save / torch.load
-                    </li>
-                    <h3>
-                        🖥️ Backend API
-                    </h3>
-                    <li>
-                        FastAPI endpoints (e.g., /generate) serve model inference
-                    </li>
-                    <li>
-                        JSON request/response schema for prompts and outputs
-                    </li>
-                    <li>
-                        CORS enabled for browser clients behind Nginx
-                    </li>
-                    <h3>
-                        💬 Frontend
-                    </h3>
-                    <li>
-                        HTML/CSS/JavaScript chat UI (“VampChat”)
-                    </li>
-                    <li>
-                        Sends user prompts to the API; renders model replies (optionally streamed)
-                    </li>
-                    <li>
-                        Simple session controls (new chat/clear history)
-                    </li>
-                    <h3>
-                        🌐 Hosting & Deployment
-                    </h3>
-                    <li>
-                        Deployed on Ubuntu with Nginx reverse proxying to the FastAPI app
-                    </li>
-                    <li>
-                        Nginx serves static frontend and proxies API requests
-                    </li>
-                    <li>
-                        Basic logging/monitoring for reliable production use
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Project Features -->
-            <section id="project-details" class="project-details">
-                <h3>Project Features</h3>
-                <ul style="text-align: center;">
-                    <li>
-                        📚 Custom GPT Model: Transformer-style architecture trained on full Dracula text.
-                    </li>
-                    <li>
-                        🔡 tiktoken Tokenization: GPT-2 compatible encoding for efficient batching.
-                    </li>
-                    <li>
-                        🔁 Training Pipeline: PyTorch training loop with checkpointing and evaluation.
-                    </li>
-                    <li>
-                        📈 Diagnostics: Real-time loss visualization with Matplotlib.
-                    </li>
-                    <li>
-                        🧛 Interactive Chat UI: Web frontend where users “talk with Dracula.”
-                    </li>
-                    <li>
-                        🌐 Web Deployment: FastAPI backend served directly, with NGINX handling static frontend files.  
-                    </li>
-                    <li>
-                        ⚡ Chat Integration: Frontend sends POST requests to FastAPI to generate Dracula’s responses in real time.
-                    </li>
-                </ul>
-                <img src="../media/vampchat_banner.png" alt="Project Detail Image" class="detail-image">
-            </section>
-
-            <!-- Project User Workflow -->
-            <section id="project-details" class="project-details">
-                <h3>Project User Workflow</h3>
-                <ul style="text-align: center;">
-                    <li>
-                        Place the cleaned Dracula text into your data directory
-                    </li>
-                    <li>
-                        Run training with Python gpt_train.py
-                    </li>
-                    <li>
-                        Monitor training loss and visual plots
-                    </li>
-                    <li>
-                        Generate text samples using a provided prompt
-                    </li>
-                    <li>
-                        Save and load model checkpoints for further experimentation
-                    </li>
-                </ul>
-                <img src="../media/vampchat_banner.png" alt="Project Detail Image" class="detail-image">
-            </section>
-
-            <!-- Technologies Used -->
-            <section id="project-details" class="skills-section" style="text-align: center; margin-top: 20px;">
-                <h3 style="margin-bottom: 40px;">Technologies Used</h3>
-                <ul style="text-align: center;">
-                    <li>
-                        🐍 Python	Core programming language
-                    </li>
-                    <li>
-                        🔦 PyTorch	Deep learning framework
-                    </li>
-                    <li>
-                        🔡 tiktoken	GPT-2 tokenization library
-                    </li>
-                    <li>
-                        🧠 Custom GPT Transformer	model implementation
-                    </li>
-                    <li>
-                        🧪 AdamW	Optimizer for stable convergence
-                    </li>
-                    <li>
-                        📈 Matplotlib	Visualizing training and validation loss
-                    </li>
-                    <li>
-                        🚀 FastAPI	backend API for serving model
-                    </li>
-                    <li>
-                        🌐 JavaScript (ES6), HTML, CSS	chat frontend
-                    </li>
-                    <li>
-                        🐧 Ubuntu Server + Nginx	production deployment
-                    </li>
-                    <li>
-                        💾 torch.save / torch.load	checkpointing
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Project Images Section -->
-            <!-- <section id="project-images" class="project-images">
-                <h3>Project Images</h3>
-                <p>Below are some additional images showcasing the project.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 1" class="gallery-image">
-                <p>Description of this image or feature.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 2" class="gallery-image">
-                <p>Explanation about this feature.</p>
-
-                <img src="https://dummyimage.com/700x350/ffffff/000000" alt="Project Image 3" class="gallery-image">
-                <p>More details about the project component.</p>
-            </section> -->
+        <!-- 01 Overview -->
+        <section id="overview" class="cs-section">
+          <h2 class="cs-section__title" data-num="01">Overview</h2>
+          <div class="cs-prose">
+            <p>Dracula AI Agent is a full-stack AI chatbot trained from scratch on Bram Stoker's <em>Dracula</em>. Originally prototyped as a Hugging Face model, it was expanded into a production-ready web service — custom model, REST API backend, and a themed chat frontend all running on a self-hosted Ubuntu server.</p>
+            <p>The system lets users have a real-time conversation with an AI that generates responses in the voice of Dracula. It demonstrates the full ML-to-production pipeline: training, inference serving, deployment, and observability — not just a notebook experiment.</p>
+          </div>
         </section>
 
-    </main>
+        <!-- 02 Architecture -->
+        <section id="architecture" class="cs-section">
+          <h2 class="cs-section__title" data-num="02">Architecture</h2>
+          <div class="cs-cards">
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
-    </footer>
+            <div class="cs-card">
+              <div class="cs-card__icon">🧠</div>
+              <div class="cs-card__title">Model</div>
+              <ul class="cs-card__list">
+                <li>GPT-style transformer with token + positional embeddings</li>
+                <li>Cross-entropy loss, AdamW optimizer</li>
+                <li>Temperature / top-k sampling at inference</li>
+                <li>Checkpoint save/load via <code>torch.save</code></li>
+              </ul>
+            </div>
 
-    <script src="../script.js"></script>
+            <div class="cs-card">
+              <div class="cs-card__icon">📊</div>
+              <div class="cs-card__title">Data Pipeline</div>
+              <ul class="cs-card__list">
+                <li>tiktoken GPT-2 encoding</li>
+                <li>Fixed-length context windows with stride</li>
+                <li>PyTorch DataLoader for batching + shuffling</li>
+                <li>Train / validation split</li>
+              </ul>
+            </div>
+
+            <div class="cs-card">
+              <div class="cs-card__icon">🧪</div>
+              <div class="cs-card__title">Training Loop</div>
+              <ul class="cs-card__list">
+                <li>Multi-epoch training with periodic validation</li>
+                <li>Loss tracking + Matplotlib visualization</li>
+                <li>Qualitative sampling between epochs</li>
+              </ul>
+            </div>
+
+            <div class="cs-card">
+              <div class="cs-card__icon">🚀</div>
+              <div class="cs-card__title">Backend API</div>
+              <ul class="cs-card__list">
+                <li>FastAPI <code>/generate</code> endpoint</li>
+                <li>JSON request/response schema</li>
+                <li>CORS enabled for browser clients</li>
+              </ul>
+            </div>
+
+            <div class="cs-card">
+              <div class="cs-card__icon">💬</div>
+              <div class="cs-card__title">Frontend (VampChat)</div>
+              <ul class="cs-card__list">
+                <li>HTML/CSS/JS chat UI</li>
+                <li>POST requests to FastAPI for inference</li>
+                <li>Session controls: new chat / clear history</li>
+              </ul>
+            </div>
+
+            <div class="cs-card">
+              <div class="cs-card__icon">🌐</div>
+              <div class="cs-card__title">Deployment</div>
+              <ul class="cs-card__list">
+                <li>Ubuntu server, NGINX reverse proxy</li>
+                <li>NGINX serves static files + proxies API</li>
+                <li>Basic logging for production visibility</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 03 Features -->
+        <section id="features" class="cs-section">
+          <h2 class="cs-section__title" data-num="03">Features</h2>
+          <div class="cs-features">
+            <div class="cs-feature">
+              <span class="cs-feature__icon">📚</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">Custom GPT Model</div>
+                <div class="cs-feature__desc">Transformer-style architecture trained end-to-end on the full Dracula text — not fine-tuned, built from scratch.</div>
+              </div>
+            </div>
+            <div class="cs-feature">
+              <span class="cs-feature__icon">🔡</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">tiktoken Tokenization</div>
+                <div class="cs-feature__desc">GPT-2 compatible encoding for efficient token batching and reproducible vocabulary.</div>
+              </div>
+            </div>
+            <div class="cs-feature">
+              <span class="cs-feature__icon">🔁</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">Full Training Pipeline</div>
+                <div class="cs-feature__desc">PyTorch training loop with checkpointing, evaluation passes, and qualitative generation — reproducible end-to-end.</div>
+              </div>
+            </div>
+            <div class="cs-feature">
+              <span class="cs-feature__icon">📈</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">Loss Diagnostics</div>
+                <div class="cs-feature__desc">Real-time training/validation loss visualization via Matplotlib — easy to spot overfitting or underfitting.</div>
+              </div>
+            </div>
+            <div class="cs-feature">
+              <span class="cs-feature__icon">🧛</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">Interactive Chat UI</div>
+                <div class="cs-feature__desc">VampChat frontend where users converse with a Dracula-voiced AI. Session management built in.</div>
+              </div>
+            </div>
+            <div class="cs-feature">
+              <span class="cs-feature__icon">⚡</span>
+              <div class="cs-feature__body">
+                <div class="cs-feature__title">Real-Time Inference</div>
+                <div class="cs-feature__desc">Browser sends POST requests to FastAPI; responses are rendered as they arrive. No external API — model runs on the server.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 Workflow -->
+        <section id="workflow" class="cs-section">
+          <h2 class="cs-section__title" data-num="04">Workflow</h2>
+          <div class="cs-steps">
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Prepare dataset</div>
+                <div class="cs-step__desc">Place the cleaned Dracula text file into the <code>data/</code> directory. The pipeline handles tokenization automatically.</div>
+              </div>
+            </div>
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Run training</div>
+                <div class="cs-step__desc">Execute <code>python gpt_train.py</code>. Training runs multi-epoch with periodic validation and loss logging to stdout.</div>
+              </div>
+            </div>
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Monitor diagnostics</div>
+                <div class="cs-step__desc">Matplotlib plots training and validation loss curves. Qualitative text samples are printed between epochs to judge output quality.</div>
+              </div>
+            </div>
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Save checkpoint</div>
+                <div class="cs-step__desc">Model weights saved via <code>torch.save</code>. Reload at any point for inference or continued training.</div>
+              </div>
+            </div>
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Serve via FastAPI</div>
+                <div class="cs-step__desc">Launch the API server. NGINX proxies incoming requests to FastAPI and serves the VampChat static frontend.</div>
+              </div>
+            </div>
+            <div class="cs-step">
+              <div>
+                <div class="cs-step__title">Chat in VampChat</div>
+                <div class="cs-step__desc">Open the browser UI, type a prompt, and receive a Dracula-voiced response generated live from the model.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 Stack -->
+        <section id="stack" class="cs-section">
+          <h2 class="cs-section__title" data-num="05">Tech Stack</h2>
+          <div class="cs-stack">
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐍</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Python</span><span class="cs-stack-item__role">Core language</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🔦</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">PyTorch</span><span class="cs-stack-item__role">Deep learning</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🔡</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">tiktoken</span><span class="cs-stack-item__role">GPT-2 tokenization</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🧠</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Custom Transformer</span><span class="cs-stack-item__role">GPT-style architecture</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🧪</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">AdamW</span><span class="cs-stack-item__role">Optimizer</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">📈</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Matplotlib</span><span class="cs-stack-item__role">Loss visualization</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🚀</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">FastAPI</span><span class="cs-stack-item__role">Inference API</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🌐</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">JS / HTML / CSS</span><span class="cs-stack-item__role">Chat frontend</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">🐧</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">Ubuntu + NGINX</span><span class="cs-stack-item__role">Production server</span></div></div>
+            <div class="cs-stack-item"><span class="cs-stack-item__icon">💾</span><div class="cs-stack-item__info"><span class="cs-stack-item__name">torch.save/load</span><span class="cs-stack-item__role">Checkpointing</span></div></div>
+          </div>
+        </section>
+
+      </div><!-- /case-content -->
+    </div><!-- /case-study -->
+
+  </main>
+
+  <!-- Project nav -->
+  <nav class="proj-nav" aria-label="Between projects">
+    <div class="proj-nav__inner">
+      <a href="splunk_enterprise.html" class="proj-nav__link">
+        <span class="proj-nav__dir">← Previous</span>
+        <span class="proj-nav__name">Splunk Monitoring Platform</span>
+      </a>
+      <a href="../projects.html" class="proj-nav__all">All Projects</a>
+      <a href="transformer_trainer_project.html" class="proj-nav__link proj-nav__link--next">
+        <span class="proj-nav__dir">Next →</span>
+        <span class="proj-nav__name">GPT Trainer</span>
+      </a>
+    </div>
+  </nav>
+
+  <footer class="site-footer">
+    <p>© 2026 Timothy Johnson</p>
+  </footer>
+
+  <script>
+  // Active TOC link on scroll
+  const sections = document.querySelectorAll('.cs-section');
+  const tocLinks = document.querySelectorAll('.case-toc__link');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.case-toc__link[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => obs.observe(s));
+  
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
+
 </body>
-
 </html>
