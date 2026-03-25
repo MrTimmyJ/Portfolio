@@ -1,177 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MrTimmyJ - Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <title>Timothy Johnson — Backend Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
-  <style>
-    body {
-      margin: 0;
-      background: #333;
-      overflow: hidden;
-    }
-  </style>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-  <a class="skip-link" href="#main-content" onclick="document.getElementById('main-content').focus()">Skip to main
-    content</a>
+
+  <!-- Fixed Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Header -->
-  <header>
-    <nav>
-      <ul>
-        <li class="logo"><a href="index.html">MrTimmyJ</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">MrTimmyJ</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content" tabindex="-1">
-    <!-- <div class="grey-background-card"> -->
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-content">
-          <div class="hero-content">
-            <h1 class="hero-title">Timothy Johnson</h1>
-            <h2 class="hero-subtitle">Software Developer</h2>
-            <p style="color: whitesmoke;">Where creativity meets code</p>
-            <!-- <p class="hero-text">Building innovative solutions at the intersection of technology and user experience</p> -->
-            <div class="hero-cta">
-              <a href="projects.html" class="btn btn-primary">View My Work</a>
-              <!-- <a href="#contact" class="btn btn-secondary">LinkedIn</a> -->
-              <a href="#contact" class="btn btn-third">Contact Me</a>
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-tag">Backend Software Engineer</div>
+        <h1 class="hero-name">Timothy Johnson</h1>
+        <p class="hero-sub">Production Systems &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; CI/CD &nbsp;·&nbsp; Infrastructure</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn-primary">View Projects</a>
+          <a href="about.html" class="btn-ghost">About Me</a>
+          <a href="https://linkedin.com/in/mrtimmyj" target="_blank" class="btn-ghost">LinkedIn</a>
+        </div>
+        <div class="hero-stack">
+          <span class="stack-pill">Java</span>
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">Go</span>
+          <span class="stack-pill">SQL</span>
+          <span class="stack-pill">Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <a href="projects.html" class="view-all-link">View all →</a>
+        </div>
+
+        <div class="featured-grid">
+
+          <a href="projects/tesc_farm_website.html" class="featured-card featured-card--large">
+            <div class="featured-card__img" style="background-image: url('media/tescfbanner.png');"></div>
+            <div class="featured-card__body">
+              <div class="featured-card__tags">
+                <span class="tag tag--go">Go</span>
+                <span class="tag tag--infra">CI/CD</span>
+                <span class="tag tag--infra">Docker</span>
+                <span class="tag tag--db">PostgreSQL</span>
+              </div>
+              <h3 class="featured-card__title">E-Commerce REST API</h3>
+              <p class="featured-card__desc">Go/Gin backend with automated Jenkins pipelines, Dockerized deployment on Linux, and NGINX reverse proxy. Full order-processing workflow with reproducible builds.</p>
+              <span class="featured-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a href="projects/personal_deployment_server.html" class="featured-card">
+            <div class="featured-card__img" style="background-image: url('media/personal_deployment_server_banner.png');"></div>
+            <div class="featured-card__body">
+              <div class="featured-card__tags">
+                <span class="tag tag--infra">k3s</span>
+                <span class="tag tag--infra">Linux</span>
+                <span class="tag tag--infra">NGINX</span>
+              </div>
+              <h3 class="featured-card__title">Personal Deployment Server</h3>
+              <p class="featured-card__desc">Self-hosted Linux server running Kubernetes (k3s), containerized services, and automated deployment workflows.</p>
+              <span class="featured-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <!-- <a href="projects/splunk_enterprise.html" class="featured-card">
+            <div class="featured-card__img" style="background: linear-gradient(135deg, #0d0d0d, #1a0a2e, #2d1b69);"></div>
+            <div class="featured-card__body">
+              <div class="featured-card__tags">
+                <span class="tag tag--obs">Splunk</span>
+                <span class="tag tag--infra">Docker</span>
+                <span class="tag tag--obs">Monitoring</span>
+              </div>
+              <h3 class="featured-card__title">Splunk Monitoring Platform</h3>
+              <p class="featured-card__desc">Deployed Splunk Enterprise with log aggregation pipelines, dashboards, and alerting for production system visibility.</p>
+              <span class="featured-card__cta">View Project →</span>
+            </div>
+          </a> -->
+
+          <!-- <a href="projects/dracula_agent_project.html" class="featured-card">
+            <div class="featured-card__img" style="background: linear-gradient(135deg, #1a0000, #3d0000, #700000);"></div>
+            <div class="featured-card__body">
+              <div class="featured-card__tags">
+                <span class="tag tag--ml">PyTorch</span>
+                <span class="tag tag--go">FastAPI</span>
+                <span class="tag tag--infra">NGINX</span>
+              </div>
+              <h3 class="featured-card__title">Dracula AI Agent</h3>
+              <p class="featured-card__desc">GPT-style transformer trained on Dracula, exposed via FastAPI with a real-time chat UI deployed on Ubuntu.</p>
+              <span class="featured-card__cta">View Project →</span>
+            </div>
+          </a> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Strip -->
+    <section class="about-strip">
+      <div class="section-container about-strip__inner">
+        <div class="about-strip__text">
+          <h2>Backend engineer focused on reliability.</h2>
+          <p>I design and deploy production systems with automated CI/CD, containerized infrastructure, and structured observability. Currently open to backend / platform engineering roles.</p>
+          <a href="about.html" class="btn-primary">More About Me</a>
+        </div>
+        <div class="about-strip__skills">
+          <div class="skill-row"><span class="skill-label">Languages</span><span class="skill-val">Go · Python · Java · Rust · Bash</span></div>
+          <div class="skill-row"><span class="skill-label">Backend</span><span class="skill-val">REST APIs · Gin · FastAPI · Microservices</span></div>
+          <div class="skill-row"><span class="skill-label">Infra</span><span class="skill-val">Docker · k3s · Jenkins · GitHub Actions · NGINX</span></div>
+          <div class="skill-row"><span class="skill-label">Data</span><span class="skill-val">PostgreSQL · MySQL · Redis · SQLite</span></div>
+          <div class="skill-row"><span class="skill-label">Observability</span><span class="skill-val">Splunk · Log Pipelines · Monitoring</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>Open to backend engineer, platform engineer, and SWE I/II roles.</p>
+            <div class="social-links">
+              <a href="https://github.com/mrtimmyj" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/mrtimmyj" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:johnsonjtimothy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="media/resume.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-pdf"></i></a>
             </div>
           </div>
-
+          <form class="contact-form" id="contact-form">
+            <div class="form-group"><input type="text" placeholder="Name" required></div>
+            <div class="form-group"><input type="email" placeholder="Email" required></div>
+            <div class="form-group"><textarea placeholder="Message" required></textarea></div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
         </div>
-      </section>
-
-
-      <!-- <div class="spacer"></div> -->
-
-
-      <!-- Project Carousel -->
-      <section class="home-carousel">
-        <!-- <h2 style="text-align: center">Featured Projects</h2> -->
-        <div class="carousel-container">
-          <button class="carousel-arrow left-arrow"></button>
-          <div class="carousel">
-            <div class="carousel-track"></div>
-          </div>
-          <button class="carousel-arrow right-arrow"></button>
-        </div>
-
-        <!-- <h2 style="text-align: center">Featured Websites</h2>
-      <div class="carousel-container">
-          <button class="carousel-arrow left-arrow">&larr;</button>
-          <div class="carousel">
-              <div class="carousel-track"></div>
-          </div>
-          <button class="carousel-arrow right-arrow">&rarr;</button>
       </div>
+    </section>
 
-      <h2 style="text-align: center">Featured Games</h2>
-      <div class="carousel-container">
-          <button class="carousel-arrow left-arrow">&larr;</button>
-          <div class="carousel">
-              <div class="carousel-track"></div>
-          </div>
-          <button class="carousel-arrow right-arrow">&rarr;</button>
-      </div> -->
-      </section>
-    <!-- </div> -->
   </main>
 
-
-  <!-- About Preview -->
-  <section class="about-preview">
-    <div class="container">
-      <div class="about-content">
-        <h2 class="section-title">About Me</h2>
-        <p style="font-size: large;">I'm a passionate software developer with expertise in full-stack development,
-          database design, and
-          interactive applications. My approach combines technical excellence with thoughtful user experience
-          design.</p>
-        <a href="about.html" class="btn btn-primary">Learn More</a>
-      </div>
-      <div class="about-image">
-        <!-- <img src="media/PortfolioTitle.png" alt="Timothy Johnson" class="profile-photo"> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Overview -->
-  <section class="skills-section" style="color: #333;">
-    <div class="container">
-      <h2 class="section-title" style="color: white;">Technical Expertise</h2>
-      <div class="skills-grid">
-        <!-- Will be populated by JavaScript -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section" style="color: #333;">
-    <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>Let's Connect</h3>
-          <p>I'm currently open to new opportunities and collaborations.</p>
-          <div class="social-links">
-            <a href="https://github.com/mrtimmyj" target="_blank" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/mrtimmyj" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:your.email@example.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="media/resume.pdf" target="_blank" aria-label="Resume">
-              <i class="fas fa-solid fa-file-pdf"></i>
-            </a>
-          </div>
-        </div>
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Email" required>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MrTimmyJ. All rights reserved.</p>
+  <footer class="site-footer">
+    <p>© 2026 Timothy Johnson</p>
   </footer>
 
-  <script src="scripts/script.js"></script>
-  <script src="scripts/scroll_to_top.js"></script>
+  <script>
+  // ============================================================
+  //  FLOW FIELD
+  //  Mobile-safe: only hard-resets on WIDTH change (orientation
+  //  flip / real resize). Height-only changes from iOS address
+  //  bar appearing/disappearing are ignored — no black flash.
+  // ============================================================
+  (function () {
+    const canvas = document.getElementById('bg-canvas');
+    const ctx    = canvas.getContext('2d');
+
+    // Use stable base size — set once, never changes on scroll
+    let W = window.innerWidth;
+    let H = window.innerHeight;
+    // Track last committed width so we only reinit on real resize
+    let lastW = W;
+
+    let cols, rows, flowfield, particles = [];
+    const scl = 16, inc = 0.09;
+    let zoff = 0;
+    let running = false;
+
+    const COLORS = [
+      [0, 200, 255, 0.55],
+      [160, 0, 255, 0.45],
+      [0, 255, 160, 0.40],
+      [255, 200, 0, 0.35],
+    ];
+
+    // ---- Full init (only on first load or real orientation change) ----
+    function fullInit() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      lastW = W;
+      cols = Math.ceil(W / scl) + 1;
+      rows = Math.ceil(H / scl) + 1;
+      flowfield = new Array(cols * rows);
+      particles = [];
+      const count = window.innerWidth < 600 ? 900 : 1800;
+      for (let i = 0; i < count; i++) particles.push(makeParticle());
+      ctx.fillStyle = 'rgb(18,18,24)';
+      ctx.fillRect(0, 0, W, H);
+    }
+
+    // ---- Soft resize: only rescale canvas dimensions, keep particles ----
+    function softResize() {
+      // Resize the canvas element but don't wipe content or reset particles.
+      // Particles outside new bounds will naturally wrap back in.
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      cols = Math.ceil(W / scl) + 1;
+      rows = Math.ceil(H / scl) + 1;
+      flowfield = new Array(cols * rows);
+      // Clamp existing particles to new bounds (don't recreate)
+      for (const p of particles) {
+        if (p.x > W) p.x = p.px = W * Math.random();
+        if (p.y > H) p.y = p.py = H * Math.random();
+      }
+    }
+
+    // ---- Debounced resize handler ----
+    let resizeTimer = null;
+    function onResize() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const newW = window.innerWidth;
+        // Only do a full hard reset if width changed by more than 50px
+        // (real orientation flip or window resize, NOT mobile address bar)
+        if (Math.abs(newW - lastW) > 50) {
+          fullInit();
+        } else {
+          // Height-only change (mobile address bar) — just adjust silently
+          softResize();
+        }
+      }, 200);
+    }
+
+    function makeParticle() {
+      const c = COLORS[Math.floor(Math.random() * COLORS.length)];
+      return {
+        x: Math.random() * W,
+        y: Math.random() * H,
+        px: 0, py: 0,
+        vx: 0, vy: 0,
+        speed: 0.8 + Math.random() * 0.7,
+        life: Math.floor(Math.random() * 80), // staggered start ages
+        maxLife: 120 + Math.floor(Math.random() * 160),
+        color: c,
+        w: Math.random() > 0.5 ? 1.5 : 1,
+      };
+    }
+
+    function resetParticle(p) {
+      p.x = Math.random() * W;
+      p.y = Math.random() * H;
+      p.px = p.x; p.py = p.y;
+      p.vx = 0; p.vy = 0;
+      p.life = 0;
+      p.maxLife = 120 + Math.floor(Math.random() * 160);
+      p.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    }
+
+    function noise(x, y, z) {
+      const ix = Math.floor(x), iy = Math.floor(y), iz = Math.floor(z);
+      const fx = x - ix, fy = y - iy, fz = z - iz;
+      const u = fx * fx * (3 - 2 * fx);
+      const v = fy * fy * (3 - 2 * fy);
+      const w = fz * fz * (3 - 2 * fz);
+      const r = (n) => { let s = Math.sin(n * 127.1 + 311.7 * iz) * 43758.5453; return s - Math.floor(s); };
+      const a = r(ix + iy * 57),     b = r(ix+1 + iy*57);
+      const c = r(ix + (iy+1)*57),   d = r(ix+1 + (iy+1)*57);
+      const e = r(ix + iy*57 + 1),   f = r(ix+1 + iy*57 + 1);
+      const g = r(ix + (iy+1)*57+1), h = r(ix+1 + (iy+1)*57+1);
+      return a+(b-a)*u+(c-a)*v+(e-a)*w+(d-b-c+a)*u*v+(f-b-e+a)*u*w+(g-c-e+a)*v*w+(h-d-f-g+b+c+e-a)*u*v*w;
+    }
+
+    // ---- Page visibility API: pause when tab is hidden ----
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && !running) { running = true; tick(); }
+    });
+
+    function tick() {
+      if (document.hidden) { running = false; return; }
+
+      // ctx.fillStyle = 'rgba(18,18,24,0.12)';
+      // ctx.fillRect(0, 0, W, H);
+
+      ctx.fillStyle = 'rgb(18,18,24)';
+      ctx.fillRect(0, 0, W, H);
+
+      for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+          const angle = noise(x * inc, y * inc, zoff) * Math.PI * 4;
+          flowfield[x + y * cols] = angle;
+        }
+      }
+      zoff += 0.0004;
+
+      for (const p of particles) {
+        const gx = Math.floor(p.x / scl);
+        const gy = Math.floor(p.y / scl);
+        if (gx >= 0 && gx < cols && gy >= 0 && gy < rows) {
+          const angle = flowfield[gx + gy * cols];
+          p.vx += Math.cos(angle) * 0.4;
+          p.vy += Math.sin(angle) * 0.4;
+        }
+        const mag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
+        p.vx = (p.vx / mag) * p.speed;
+        p.vy = (p.vy / mag) * p.speed;
+
+        p.px = p.x; p.py = p.y;
+        p.x += p.vx; p.y += p.vy;
+        p.life++;
+
+        let wrapped = false;
+        if (p.x < 0) { p.x = W; wrapped = true; }
+        if (p.x > W) { p.x = 0; wrapped = true; }
+        if (p.y < 0) { p.y = H; wrapped = true; }
+        if (p.y > H) { p.y = 0; wrapped = true; }
+        if (wrapped) { p.px = p.x; p.py = p.y; }
+
+        if (p.life > p.maxLife) { resetParticle(p); continue; }
+
+        const alpha = Math.sin((p.life / p.maxLife) * Math.PI) * p.color[3];
+        ctx.strokeStyle = `rgba(${p.color[0]},${p.color[1]},${p.color[2]},${alpha})`;
+        ctx.lineWidth = p.w;
+        ctx.beginPath();
+        ctx.moveTo(p.px, p.py);
+        ctx.lineTo(p.x, p.y);
+        ctx.stroke();
+      }
+
+      requestAnimationFrame(tick);
+    }
+
+    window.addEventListener('resize', onResize);
+    fullInit();
+    running = true;
+    tick();
+  })();
+
+  // Contact form
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thanks for reaching out! I\'ll get back to you soon.');
+    this.reset();
+  });
+
+  // Scroll to top
+  (function() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    btn.style.display = 'none';
+    document.body.appendChild(btn);
+    let t;
+    window.addEventListener('scroll', function() {
+      clearTimeout(t);
+      t = setTimeout(function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = 'flex'; btn.style.visibility = 'visible'; btn.style.opacity = '1';
+        } else {
+          btn.style.opacity = '0';
+          setTimeout(() => { btn.style.visibility = 'hidden'; btn.style.display = 'none'; }, 300);
+        }
+      }, 100);
+    });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+  </script>
+
 </body>
-
-
 </html>
-
