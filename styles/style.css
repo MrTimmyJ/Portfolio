@@ -1,11 +1,3 @@
-/* ===================================================================
-   MRTIMMYJ — style.css  v2.0
-   Complete portfolio stylesheet — main site + project case studies.
-   Dark, technical, backend-engineer aesthetic.
-   Font: JetBrains Mono (mono personality) + Inter (body)
-=================================================================== */
-
-/* --- Reset & Variables --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -82,11 +74,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   z-index: 1;
 }
 
-/* ===================================================================
-   SKIP LINK
-   Hidden until keyboard focus — not a visible mobile sliver.
-   position: fixed so it's always at the viewport top when focused.
-=================================================================== */
 .skip-link {
   position: fixed;
   top: 0;
@@ -99,7 +86,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   font-weight: 700;
   z-index: 99999;
   border-radius: 0 0 var(--radius) 0;
-  /* Visually hidden, still in tab order */
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   width: 1px;
@@ -177,7 +163,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
 .nav-link:hover, .nav-link.active { color: var(--text); }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-/* Small screen nav — just tighten gaps, no hamburger */
 @media (max-width: 480px) {
   .nav-links { gap: 16px; }
   .nav-link  { font-size: 0.78rem; letter-spacing: 0.02em; }
@@ -977,11 +962,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   }
 }
 
-/* ===================================================================
-   PROJECT PAGE — case study layout
-   Sticky sidebar TOC + content well + consistent section rhythm.
-=================================================================== */
-
 /* ---- Project hero ---- */
 .proj-hero {
   padding: calc(var(--nav-h) + 56px) 0 64px;
@@ -1083,7 +1063,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   letter-spacing: 0.08em;
 }
 
-/* ---- Case study layout ---- */
 .case-study {
   max-width: 1200px;
   margin: 0 auto;
@@ -1093,8 +1072,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   gap: 64px;
   align-items: start;
 }
-
-/* Sticky sidebar TOC */
 .case-toc {
   position: sticky;
   top: calc(var(--nav-h) + 24px);
@@ -1133,15 +1110,13 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   background: rgba(0,200,255,0.05);
 }
 
-/* Main content well */
 .case-content {
-  min-width: 0; /* prevent grid blowout */
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
-/* Section */
 .cs-section { scroll-margin-top: calc(var(--nav-h) + 32px); }
 
 .cs-section__title {
@@ -1173,7 +1148,6 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
 }
 .cs-prose p:last-child { margin-bottom: 0; }
 
-/* Subsection cards (architecture breakdown etc) */
 .cs-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
