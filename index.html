@@ -173,20 +173,13 @@
   </footer>
 
   <script>
-  // ============================================================
-  //  FLOW FIELD
-  //  Mobile-safe: only hard-resets on WIDTH change (orientation
-  //  flip / real resize). Height-only changes from iOS address
-  //  bar appearing/disappearing are ignored — no black flash.
-  // ============================================================
+  // Flow field background — resets only on width change
   (function () {
     const canvas = document.getElementById('bg-canvas');
     const ctx    = canvas.getContext('2d');
 
-    // Use stable base size — set once, never changes on scroll
     let W = window.innerWidth;
     let H = window.innerHeight;
-    // Track last committed width so we only reinit on real resize
     let lastW = W;
 
     let cols, rows, flowfield, particles = [];
@@ -201,7 +194,6 @@
       [255, 200, 0, 0.35],
     ];
 
-    // ---- Full init (only on first load or real orientation change) ----
     function fullInit() {
       W = canvas.width  = window.innerWidth;
       H = canvas.height = window.innerHeight;
@@ -216,16 +208,12 @@
       ctx.fillRect(0, 0, W, H);
     }
 
-    // ---- Soft resize: only rescale canvas dimensions, keep particles ----
     function softResize() {
-      // Resize the canvas element but don't wipe content or reset particles.
-      // Particles outside new bounds will naturally wrap back in.
       W = canvas.width  = window.innerWidth;
       H = canvas.height = window.innerHeight;
       cols = Math.ceil(W / scl) + 1;
       rows = Math.ceil(H / scl) + 1;
       flowfield = new Array(cols * rows);
-      // Clamp existing particles to new bounds (don't recreate)
       for (const p of particles) {
         if (p.x > W) p.x = p.px = W * Math.random();
         if (p.y > H) p.y = p.py = H * Math.random();
@@ -238,12 +226,9 @@
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         const newW = window.innerWidth;
-        // Only do a full hard reset if width changed by more than 50px
-        // (real orientation flip or window resize, NOT mobile address bar)
         if (Math.abs(newW - lastW) > 50) {
           fullInit();
         } else {
-          // Height-only change (mobile address bar) — just adjust silently
           softResize();
         }
       }, 200);
@@ -288,7 +273,6 @@
       return a+(b-a)*u+(c-a)*v+(e-a)*w+(d-b-c+a)*u*v+(f-b-e+a)*u*w+(g-c-e+a)*v*w+(h-d-f-g+b+c+e-a)*u*v*w;
     }
 
-    // ---- Page visibility API: pause when tab is hidden ----
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden && !running) { running = true; tick(); }
     });
