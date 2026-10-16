@@ -571,13 +571,16 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   box-shadow: var(--shadow);
 }
 
-.pin-card__accent {
-  height: 3px;
-  flex-shrink: 0;
+.pin-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.35;
+  transition: opacity var(--transition);
 }
-.pin-card__accent--blue   { background: linear-gradient(90deg, var(--cyan), var(--purple)); }
-.pin-card__accent--purple { background: linear-gradient(90deg, var(--purple), #ff6b9d); }
-.pin-card__accent--teal   { background: linear-gradient(90deg, var(--green), var(--cyan)); }
+.pin-card:hover::before { opacity: 0.9; }
 
 .pin-card__body {
   padding: 24px;
