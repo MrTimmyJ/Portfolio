@@ -557,7 +557,8 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
 }
 
 .pin-card--primary {
-  border: 1px solid rgba(0,200,255,0.35);
+  border: 1px solid rgba(0,200,255,0.6);
+  background: linear-gradient(180deg, rgba(0,200,255,0.06) 0%, var(--surface) 60%);
 }
 .pin-card--primary:hover {
   border-color: var(--accent);
