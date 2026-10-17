@@ -556,16 +556,13 @@ body:not(.page-projects):not(.page-about):not(.page-project) .site-footer {
   box-shadow: var(--shadow);
 }
 
-.pin-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--accent);
-  opacity: 0.35;
-  transition: opacity var(--transition);
+.pin-card--primary {
+  border: 1px solid rgba(0,200,255,0.35);
 }
-.pin-card:hover::before { opacity: 0.9; }
+.pin-card--primary:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 28px rgba(0,200,255,0.12);
+}
 
 .pin-card__body {
   padding: 24px;
